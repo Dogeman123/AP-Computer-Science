@@ -12,7 +12,7 @@ public class Prog52a {
 
         /*
         area = 11726
-        perim= 450
+        perim = 450
          */
 
     }
