@@ -1,5 +1,6 @@
 public class Prog88a {
-
+// michael verdin
+    //09/14/22
     public static void main(String[] args) {
             // Enter number 1-13
             //Enter number 2-20
@@ -7,9 +8,9 @@ public class Prog88a {
             int num1 = (int) (Math.random() * (13 - 1)) + 1;
             int num2 = (int) (Math.random() * (20 - 2)) + 2;
             int min = num1;
-            int sum = num1 - num2;
-            int dif = num2 - num2;
-            int ave = num1 + num2;
+            int sum = num2 + num1;
+            int dif = num1 - num2;
+            int ave = (num1 + num2)/2;
 
 
 
@@ -31,7 +32,10 @@ public class Prog88a {
             System.out.println("The original numbers are " + num1 + "and " + num2);
             System.out.println("The sum is " + sum);
             System.out.println("The product is " + prod);
-            System.out.println("");
+            System.out.println("The average is " + ave);
+            System.out.println("The absolute min is " + min );
+            System.out.println("The absolute max is " + max);
+
         }
     }
 
