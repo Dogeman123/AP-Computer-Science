@@ -24,6 +24,19 @@ import java.util.*;
         System.out.println("-------------- ");
         System.out.println(anws + " Suprise!!! " );
 
+        /*
+        Please enter a number you don't like 1-9
+5
+5.0
+x9.0
+--------------
+45.0
+x12345679
+--------------
+5.55555555E8 Suprise!!!
+
+         */
+
 
 
 
