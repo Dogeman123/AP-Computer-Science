@@ -1,14 +1,13 @@
-import java.io.File;
-import java.io.IOException;
-import java.util.Scanner;
+
+import java.util.*;
+import  java.io.*;
 
 public class Prog285b {
-    public class dfile {
         public static void main(String[] args){
             try {
                 Scanner imput = new Scanner(new File("data/prog285b.dat"));
             System.out.println("ID\t\tCode\tSales\t\tCommission");
-            System.out.print("---------------------------------");
+            System.out.print("---------------------------------------");
             while (imput.hasNext()){
                 int id = imput.nextInt();
                 int c= imput. nextInt();
@@ -36,4 +35,5 @@ public class Prog285b {
 
         }
     }
-}
+
+
