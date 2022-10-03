@@ -6,7 +6,7 @@ public class Prog285b {
     public class dfile {
         public static void main(String[] args){
             try {
-                Scanner imput = new Scanner(new File("../data/prog285b.dat"));
+                Scanner imput = new Scanner(new File("data/prog285b.dat"));
             System.out.println("ID\t\tCode\tSales\t\tCommission");
             System.out.print("---------------------------------");
             while (imput.hasNext()){
