@@ -30,6 +30,7 @@ public class LP41 {
         System.out.println("Price per copy is: " + price);
         System.out.println("total cost is: " + num );
 
+
     }
 }
 
