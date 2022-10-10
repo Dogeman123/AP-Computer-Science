@@ -7,7 +7,7 @@ public class LP410 {
 
     Scanner input = new Scanner(System.in);
 
-    System.out.print("Regular Prism");
+    System.out.println("Regular Prism");
 
     System.out.print("Enter the Length: ");
     int Length = input.nextInt();
@@ -20,29 +20,41 @@ public class LP410 {
 
     int volume = Length * Width * Height;
 
-    System.out.print("The volume is: " + volume);
+    System.out.println("The volume is: " + volume);
 
-    System.out.print("Regular Sphere");
+    System.out.println("Regular Sphere");
 
     System.out.print("Enter the radius: ");
     int Radius = input.nextInt();
 
     double Svolume = 4/3*3.14 * Math.pow(Radius, 3);
 
-    System.out.print("The Volume is: " + Svolume);
+    System.out.println("The Volume is: " + Svolume);
 
-    System.out.print("Cube");
+    System.out.println("Cube");
 
     System.out.print("Enter the side lengths: ");
     int sides = input.nextInt();
 
-    double Cvolume = Math.pow(sides, 4);
+    double Cvolume = Math.pow(sides, 3);
 
-    System.out.print("The volume is: " + Cvolume);
+    System.out.println("The volume is: " + Cvolume);
 
     }
 }
 
 /*
+Regular Prism
+Enter the Length: 3
+Enter the width: 4
+Enter the Height: 5
+The volume is: 60
 
+Regular Sphere
+Enter the radius: 3
+The Volume is: 113.097
+
+Cube
+Enter the side lengths: 4
+The volume is: 256.0
  */
