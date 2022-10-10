@@ -18,7 +18,7 @@ public class LP49 {
         if (Pnum == num){
             System.out.print("You win");
         }else{
-            System.out.println("Better luck next time" );
+            System.out.println("Better luck next time"  );
         }
 
     }
