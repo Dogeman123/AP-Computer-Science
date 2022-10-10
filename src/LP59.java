@@ -1,8 +1,9 @@
 // Michael verdin
 
 //10/7/22
-
-//LP59
+// Michael Verdin
+//10/3/22
+//LP5-9
 
 public class LP59 {
     public static void main(String[]  args){
@@ -11,8 +12,6 @@ public class LP59 {
         double num3 = 0;
         double num4 = 0;
         double num5 = 0;
-
-
 
         while (num<6){
            num += 1;
