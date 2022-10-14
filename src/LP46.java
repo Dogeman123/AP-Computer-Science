@@ -6,8 +6,6 @@ public class LP46 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-
-
         Random Compnum = new Random();
         int num = Compnum.nextInt(10);
 
