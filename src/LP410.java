@@ -7,7 +7,7 @@ public class LP410 {
 
     Scanner input = new Scanner(System.in);
 
-    System.out.println("Regular Prism");
+    System.out.println("Regular Prism" );
 
     System.out.print("Enter the Length: ");
     int Length = input.nextInt();
