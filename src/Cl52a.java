@@ -36,6 +36,19 @@ public class Cl52a {
      */
     public int getArea(){return myArea;}
     public int getPerim() {return myPerim;}
+
+
+
+
+
+    // override method
+    public  String toString() {
+        return String.format("Area: %s\nPerimeter: %s", myArea, myPerim);
+    }
+        // easy print method
+        public void print() {
+            System.out.println(this.toString());
+        }
 }
 
 /* Class:
