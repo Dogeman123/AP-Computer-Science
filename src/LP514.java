@@ -16,7 +16,7 @@ public class LP514 {
             Random Dice = new Random();
             int dice = Dice.nextInt(1, 6);
             Random Dice2 = new Random();
-            int dice2 = Dice.nextInt(1, 6);
+            int dice2 = Dice2.nextInt(1, 6);
             total = dice + dice2;
 
             System.out.println(dice + "     " + dice2 + "     " +total);

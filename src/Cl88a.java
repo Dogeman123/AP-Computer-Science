@@ -5,6 +5,7 @@
 public class Cl88a {
     private int myNum;
     private int myNum2;
+    private int myDiff;
 
 
 }

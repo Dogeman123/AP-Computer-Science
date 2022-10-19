@@ -12,8 +12,17 @@ public class LP46 {
         Random Compnum2 = new Random();
         int num2 = Compnum.nextInt(10);
 
-        Random Compnum3 = new Random();
-        int num3 = Compnum.nextInt(10,14);
+
+
+        String a = "/";
+        String b = "*";
+        String c = "+";
+        String d = "-";
+
+
+        Random Op = new Random();
+        int o = Op.nextInt(10,14);
+
 
         System.out.print("What is: " + num  + " " + num2);
 
