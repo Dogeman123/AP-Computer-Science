@@ -13,7 +13,16 @@ public class StrInterview6 {
         int Acount = 0;
         int Bcount = 0;
         int Ccount = 0;
-        
+        int Dcount = 0;
+        int Ecount = 0;
+        int Fcount = 0;
+        int Gcount = 0;
+        int Hcount = 0;
+        int Icount = 0;
+        int Jcount = 0;
+        int Kcount = 0;
+        int Lcount = 0;
+        int Mcount = 0;
 
 
 

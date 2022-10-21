@@ -2,8 +2,6 @@
 // LP4-9
 // 10/4/22
  import java.util.*;
- import java.util.random.RandomGenerator;
- import java.util.random.RandomGenerator.*;
 public class LP49 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
