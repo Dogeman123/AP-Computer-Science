@@ -10,7 +10,7 @@ public class Cl76a {
         num = mynum;
         multi = 9;
         prod = num * multi;
-        Aws = prod * 123456789;
+        Aws = prod * 12345679;
 
     }
 
@@ -19,4 +19,5 @@ public class Cl76a {
     }
 
     public int getAws() {return Aws;}
+    public int getProd() {return prod;}
 }
