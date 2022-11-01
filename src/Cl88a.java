@@ -15,7 +15,6 @@ public class Cl88a {
 
     public Cl88a(int myNum1, int myNum2){
         Num = myNum1;
-        myNum2 = myNum2;
 
         sum = myNum1 +myNum2;
         Diff = myNum1 - myNum2;

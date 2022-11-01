@@ -9,8 +9,8 @@ import java.util.*;
         Scanner Keyboard = new Scanner(System.in);
 
         System.out.println("Please enter a number you don't like 1-9 ");
-
         double num = Keyboard.nextDouble();
+
         double multi = 9;
         double prod = num * multi;
         double anws = prod * 12345679;
