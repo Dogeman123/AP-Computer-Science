@@ -16,6 +16,6 @@ public class Prog76aClass {
        int num2 = wow.getAws();
        System.out.print(num);
        System.out.print("x" + "9");
-       System.out.print("---------------");
+       System.out.print("--------------");
     }
 }
