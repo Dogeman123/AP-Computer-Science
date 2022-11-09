@@ -3,7 +3,6 @@
 import java.util.*;
 public class Prog54cClass {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
         int rad = 3;
 
