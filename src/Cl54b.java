@@ -14,8 +14,8 @@ public class Cl54b {
            myNum2 = Num2;
            mynum3 = Num3;
            myNum4 = Num4;
-           sum = Num + Num2 + Num3;
-            average = sum/3;
+           sum = Num + Num2 + Num3 + Num4;
+            average = sum/4;
         }
 
 

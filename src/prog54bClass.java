@@ -26,11 +26,19 @@ public class prog54bClass {
 
         double av = wow.getAverage();
 
-        System.out.print("The sum of the numbers is: " + num1);
-        System.out.print("The average of the number is: " + av);
-
-
-
+        System.out.println("The sum of the numbers is: " + num1);
+        System.out.println("The average of the number is: " + av);
 
     }
 }
+/*
+Enter in a number: 475
+Enter in a number: 821
+Enter in a number: 369
+Enter in a number: 562
+The sum of the numbers is: 2227
+The average of the number is: 556.0
+
+Process finished with exit code 0
+
+ */
