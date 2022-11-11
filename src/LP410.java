@@ -12,7 +12,7 @@ public class LP410 {
     System.out.print("Enter the Length: ");
     int Length = input.nextInt();
 
-    System.out.print("Enter the width: ");
+    System.out.print("Enter the  width: ");
     int Width = input.nextInt();
 
     System.out.print("Enter the Height: ");
