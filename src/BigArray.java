@@ -73,7 +73,7 @@ public class BigArray {
         }
         System.out.println();
         //11.What numbers are multiples of 4?
-        for (int lcv = 0; lcv < array.length; lcv++){
+        for(int lcv = 0; lcv < array.length; lcv++){
             if(array[lcv] % 4 == 0){
                 System.out.print(array[lcv] + " ");
             }
