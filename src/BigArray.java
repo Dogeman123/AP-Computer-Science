@@ -136,30 +136,28 @@ public class BigArray {
                 int n = temp /= temp % 10;
                 temp /= 10;
                 digitSum += n;
-
+            }
+            sum += digitSum;
         }
-        sum += digitSum;
-        System.out("Sum of all digits of all elements " + sum);
-    }
-
-
-
-
-    public static int[] circularShiftRight(int[] arr){
-        int temp = arr[arr.length-1];
-        int[] shifted = new int[arr.length];
-        for(int lcv = 0; lcv < arr.length; lcv++)
-            shifted[lcv] = arr [arr.length];
-        for (int lcv =0; lcv < shifted.length-1; lcv++){
-            shifted[lcv +1] = arr[lcv];
-
+            System.out.println("Sum of all digits of all elements " + sum);
         }
-        shifted[0] =temp;
-        return shifted;
-    }
 
 
-}
+        public static int[] circularShiftRight(int[] arr){
+            int temp = arr[arr.length - 1];
+            int[] shifted = new int[arr.length];
+            for (int lcv = 0; lcv < arr.length; lcv++)
+                shifted[lcv] = arr[lcv];
+
+                for (int lcv = 0; lcv < shifted.length - 1; lcv++) {
+                    shifted[lcv + 1] = arr[lcv];
+                }
+                    shifted[0] = temp;
+                return shifted;
+
+
+            }
+        }
 
 /*
 29 41 48 73 57 53 56 54 79 67 29 69 89 89 34 90 47 46 69
