@@ -8,10 +8,7 @@ public class MSOE1 {
         System.out.print("Enter a lowercase word: ");
         String Wrd = input.nextLine();
 
-      //  boolean same = true;
-     //   for (int lcv = 0; lcv < Wrd.length(); lcv++) {
-      //      if (Wrd[lcv] != same[Wrd.length() - 1 - lcv])
-        ///        same = false;
-        }
+
+
     }
-//}
+}

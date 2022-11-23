@@ -18,6 +18,9 @@ public class CllP9 {
         myMonth2 = Month2;
         myday2 = day2;
 
-        alive = year2-year*365;
+        alive = (year2-year)*(365) + (myMonth2-myMonth);
+
+
+
     }
 }
