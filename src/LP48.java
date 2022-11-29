@@ -14,5 +14,7 @@ public class LP48 {
 
         System.out.print("Enter a num: ");
         int num3 = input.nextInt();
+
+
     }
 }
