@@ -18,9 +18,17 @@ public class CllP9 {
         myMonth2 = Month2;
         myday2 = day2;
 
-        alive = (year2-year)*(365) + (myMonth2-myMonth);
+        alive = 0;
+        sleep = 0;
 
 
 
     }
+
+    public void setStuff(){
+        alive = (myyear2-myyear)*(365) + (myMonth2-myMonth) * 30 - myMonth2 + myMonth;
+        sleep = alive * 8;
+    }
+    public int getAlive() { return alive; }
+    public int getSleep() { return sleep;}
 }
