@@ -16,16 +16,16 @@ public class Cl213f {
 
             if (myKwh < 8000) {
                 myCost = myKwh * .5;
-
-                if (myKwh > 10000) {
-                    myCost = myKwh * .4;
-                }
+            }
+            if (myKwh > 10000) {
+                myCost = myKwh * .4;
             }
         }
     }
-        public String toString() {
-            return "The cost of " + myKwh + "\t" + myCost;
 
-        }
+    public String toString() {
+
+        return "The cost of " + myKwh + " is " + myCost;
     }
+}
 
