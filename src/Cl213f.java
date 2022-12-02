@@ -20,11 +20,12 @@ public class Cl213f {
                 if (myKwh > 10000) {
                     myCost = myKwh * .4;
                 }
-
-            }
-            //public String toString(); {
-               //     return "The cost of";
-
             }
         }
     }
+        public String toString() {
+            return "The cost of " + myKwh + "\t" + myCost;
+
+        }
+    }
+
