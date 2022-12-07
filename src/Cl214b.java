@@ -12,7 +12,7 @@ public class Cl214b {
     private double myNetpay;
 
     public Cl214b(int Enum, double hours, double rate, double Sfactor, double gross,
-                  double GYTD, double withhold, double FICA, double Netpay ){
+                  double GYTD, double withhold, double FICA, double Netpay) {
         myEmployeeN = Enum;
         myHours = hours;
         myRate = rate;
@@ -23,9 +23,36 @@ public class Cl214b {
         myFICA = FICA;
         myNetpay = Netpay;
     }
-    public void setStuff(){
+
+    public void setStuff() {
         myGross = myHours * myRate * mySFactor;
 
-    }
-}
+        // Withhold
+         if (myGross < 149.99){
+            myWithhold = myGross * .8;
+        } else if (myGross < 199.00){
+            myWithhold = myGross * .12;
+        } else if (myGross < 299.999){
+            myWithhold = myGross * .15;
+        }
+         else {
+             myWithhold = 0;
+         }
+
+         //FICA
+       if (myGYTD > 17300){
+           myFICA = 0;
+       }else if (myGYTD + myGross <= 17300){
+           myFICA = .0605 *myGross;
+       }else if (myGYTD < 17300 && (myGross + myGYTD) > 17300){
+           myFICA = 17300 - (myGross + myGYTD);
+
+       }
+        }
+
+
+        }
+
+
+
 
