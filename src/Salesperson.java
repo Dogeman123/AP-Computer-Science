@@ -14,7 +14,7 @@ public class Salesperson {
         myId = id;
         myCode= code;
         mySales = sales;
-        myComm= 0;
+        myComm = 0;
 
     }
     public void setcomm(){

@@ -5,23 +5,23 @@ public class Cl214b {
     private double myHours;
     private double myRate;
     private double mySFactor;
-    private double myGross;
     private double myGYTD;
+    private double myGross;
     private double myWithhold;
     private double myFICA;
     private double myNetpay;
 
     public Cl214b(int Enum, double hours, double rate, double Sfactor,
-                  double GYTD) {
+                  double GYTD, double Gross, double withhold, double FICA, double Net) {
         myEmployeeN = Enum;
         myHours = hours;
         myRate = rate;
         mySFactor = Sfactor;
-        myGross = 0;
         myGYTD = GYTD;
         myWithhold = 0;
         myFICA = 0;
         myNetpay = 0;
+        myGross = 0;
     }
 
     public void setStuff() {
