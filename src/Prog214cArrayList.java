@@ -6,14 +6,22 @@ import java.io.IOException;
 import java.util.*;
 public class Prog214cArrayList {
     public static void main(String[] args) {
+       ArrayList<Cl214c> List = new ArrayList<>();
         try {
             Scanner input = new Scanner(new File("data/prog214c.dat"));
 
             while (input.hasNext()){
+                String GasType = input.nextLine();
+              double Gallons = input.nextDouble();
+                double GasAmount = input.nextDouble();
+                String Wash = input.nextLine();
+                double WashC = input.nextDouble();
 
-
-
+                Cl214c wow = new Cl214c(GasType,GasAmount,Gallons, Wash, WashC);
+                List.add(wow);
             }
+
+
 
 
 
