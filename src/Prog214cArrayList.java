@@ -21,11 +21,16 @@ public class Prog214cArrayList {
                 List.add(wow);
             }
 
+            for(int lcv = 0; lcv <List.size(); lcv++){
+                Cl214c me = List.get(lcv);
+                me.setStuff();
+            }
+            for (Cl214c me : List){
+              System.out.println(me.getGallons());
 
-
-
-
-
+                System.out.println("COMPSCI PETROLEUM COMPANY");
+                System.out.println("Premium");
+            }
         } catch (IOException e) {
             System.out.println("Can't find data file!");
         }

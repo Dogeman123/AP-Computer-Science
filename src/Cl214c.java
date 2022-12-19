@@ -29,6 +29,7 @@ public class Cl214c {
 
 
 
+
         myCost = myGcost * myGallons;
 
         myTotal = myCost + myWash;
@@ -36,7 +37,7 @@ public class Cl214c {
 
     }
 
-    public double getMyGallons() { return myGcost;}
-    public double getMyCost() {return myCost;}
-    public double getMyTotal() {return myTotal;}
+    public double getGallons() { return myGcost;}
+    public double getCost() {return myCost;}
+    public double getTotal() {return myTotal;}
 }
