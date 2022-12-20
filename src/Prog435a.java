@@ -8,6 +8,18 @@ public class Prog435a {
         try {
             Scanner input = new Scanner(new File("data/prog285b.dat"));
 
+            while(input.hasNext()){
+                int car = input.nextInt();
+                int gate = input.nextInt();
+
+                Cl435a wow = new Cl435a(car,gate);
+
+                System.out.print("");
+
+
+
+            }
+
 
 
 

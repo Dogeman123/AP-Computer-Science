@@ -17,23 +17,13 @@ public class Cl214c {
         myTotal = 0;
         myWashCost = WashCost;
     }public void setStuff(){
-        if(myGas == "Premium"){
-            myGcost = 1.479;
-
-        }if (myGas == "Regular"){
-            myGcost = 1.359;
-
-        } else{
-            myGcost = 1.429;
-        }
-
-
-
+        if(myGcost == 1.479) {myGas = "Premium";}
+        else if(myGcost == 1.359) {myGas = "Regular";}
+        else if(myGcost == 1.429) {myGas = "High Octane";}
 
         myCost = myGcost * myGallons;
 
         myTotal = myCost + myWash;
-
 
     }
 
