@@ -4,7 +4,7 @@ public class Cl435a {
     private int mycar;
     private double myfactor;
     private String myType;
-    private int mygate;
+    private double mygate;
     private double mytoll;
     private double mycost;
 
@@ -32,12 +32,13 @@ public class Cl435a {
         else if(mygate == 7) {mytoll = 5.50;}
         else if(mygate == 8) {mytoll = 6.0;}
 
+        mycost = mytoll * myfactor;
 
     }
 
     public double getMyfactor() {return myfactor;}
     public String getMytype() {return myType;}
-    public int getMygate() {return mygate;}
+    public double getMygate() {return mygate;}
     public double getMytoll() {return mytoll;}
     public double getMycost() {return mycost;}
 
