@@ -6,8 +6,4 @@ public class Cl215i {
     private double myavg;
     private int myNumV;
 
-    public Cl505a(int best, int Worst){
-        myBest = best;
-
-    }
 }
