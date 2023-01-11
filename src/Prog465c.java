@@ -13,9 +13,6 @@ public class Prog465c {
             }
 
 
-
-
-
             for (int[] row : mat){
                 for (int n : row){
                     System.out.print(n + " ");

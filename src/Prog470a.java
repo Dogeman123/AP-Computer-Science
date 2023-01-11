@@ -10,16 +10,17 @@ public class Prog470a {
             Scanner input = new Scanner(new File("data/prog464a.dat"));
             int[][] mat = new int[6][6]; // 6 Row, 6 col Matrix
             for(int row = 0; row < mat.length-1; row++){
-                for(int col = 0; col < mat[row].length-1; col++){
+                for(int col = 0; col < mat[col].length-1; col++){
                     mat[row][col] = input.nextInt();
                 }
             }
 
-            for(int row = 0; row < mat.length; row++) {
-                for (int col = 0; col < mat[0].length - 1; col++) {
-                    mat[row][5] += mat[row][col];
-                //    mat[5][col] += mat[row][col];
-                   mat[5][5] += mat[row][col];
+            for(int row = 0; row < mat.length-1; row++) {
+                for (int col = 0; col < mat[0].length-1; col++) {
+                   // mat[row][5] += mat[row][col];
+                    mat[5][col] += mat[row][col];
+                //   mat[5][5] += mat[row][col];
+
                 }
             }
             for (int[] row : mat){
