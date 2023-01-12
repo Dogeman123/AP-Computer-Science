@@ -16,7 +16,11 @@ public class Prog470b {
             for(int r = 0; r < mat.length-1; r++){
                 for(int c = 0; c < mat[0].length-1; c++){
                     System.out.print(mat[r][c]+ " ");
+
+
                 }
+
+
                 System.out.println();
             }
 

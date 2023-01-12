@@ -16,10 +16,10 @@ public class Prog470a {
             }
 
             for(int row = 0; row < mat.length-1; row++) {
-                for (int col = 0; col < mat[0].length-1; col++) {
-                   // mat[row][5] += mat[row][col];
+                for (int col = 1; col < mat[0].length-1; col++) {
+
                     mat[5][col] += mat[row][col];
-                //   mat[5][5] += mat[row][col];
+
 
                 }
             }
@@ -34,3 +34,12 @@ public class Prog470a {
         }
     }
 }
+
+/*
+45 67 89 12 -3
+-3 -6 -7 -4 -9
+96 81 -8 52 12
+14 -7 72 29 -1
+19 43 28 63 87
+171 178 174 152 86
+ */
