@@ -6,39 +6,46 @@ import java.util.Scanner;
 // Michael Verdin
 // Prog602b
 // 11/30/22
+import java.io.*;
+import java.util.*;
+
 public class Prog602b {
     public static void main(String[] args) {
         try {
             Scanner input = new Scanner(new File("data/prog602b.dat"));
-            ArrayList<Internetcustomer> list = new ArrayList<Internetcustomer>();
+            ArrayList<InternetCustomer> list = new ArrayList<InternetCustomer>();
 
             while (input.hasNext()) {
                 int id = input.nextInt();
                 double hours = input.nextDouble();
                 int code = input.nextInt();
 
-                Internetcustomer fred = new Internetcustomer(id, hours, code);
+                InternetCustomer fred = new InternetCustomer(id, hours, code);
                 list.add(fred);
             }
+
             for (int lcv = 0; lcv < list.size(); lcv++) {
-                Internetcustomer me = list.get(lcv);
+                InternetCustomer me = list.get(lcv);
                 me.setCharge();
             }
+
             System.out.println("Account #\t\tHours\t\tCode\t\tAmount Due");
-            for (Internetcustomer me : list) {
+            for (InternetCustomer me : list) {
                 System.out.println(me.getAcc() + "\t\t" +
                         me.getHours() + "\t\t" + me.getCode() + "\t\t" + me.getCharge());
             }
         } catch (IOException e) {
-            System.out.println("Can't find the data file");
+            System.out.println("Can't find data file!");
         }
     }
 }
 
 
 
-        /*
-        Account #		Hours		Code		Amount Due
+
+/*
+
+Account #	Hours		Code		Amount Due
 1825		3.25		0		200.0
 14063		17.06		1		661.8
 17185		7.93		1		396.5
