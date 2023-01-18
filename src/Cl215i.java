@@ -12,12 +12,19 @@ public class Cl215i {
     myGals = gals;
     myMiles = miles;
     myMPG = 0;
+
     }
     public void calc(){
-       int Bvnum =0;
+       int Bvnum = 0;
+       int Wnum = 0;
+       double favg = 0;
+       int nv = 0;
 
-        myMPG = myMiles/myGals;
+        myMPG = Math.round(myMiles/myGals);
+
+
 
     }
+    public double getMPG() {return myMPG;}
 
 }

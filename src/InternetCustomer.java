@@ -14,9 +14,9 @@ public class InternetCustomer {
         myCharge = 0;
     }
     public void setCharge() {
-        double surcharge =0;
+        double surcharge = 0 ;
         if (myCode == 1 ) surcharge = 50;
-        else if (myCode == 2 ) surcharge=150;
+        else if (myCode == 2 ) surcharge = 150;
 
         if(myHours >= 15.01)
              myCharge = 550 + (30 * (myHours -15));
@@ -26,11 +26,8 @@ public class InternetCustomer {
             myCharge = 200;
         myCharge += surcharge;
     }
-
     public int getAcc() { return myAccount; }
     public double getHours() { return myHours; }
     public int getCode() { return myCode; }
     public double getCharge() { return myCharge; }
-
-
 }
