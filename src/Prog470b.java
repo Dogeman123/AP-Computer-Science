@@ -1,31 +1,41 @@
+//Michael Verdin
+// Prog470b
 import java.util.*;
-import java.io.IOException;
-import java.io.File;
+import java.io.*;
+
 public class Prog470b {
     public static void main(String[] args) {
         try {
             Scanner input = new Scanner(new File("data/prog464a.dat"));
 
-            int[][] mat = new int[6][6]; // 6 Row, 6 col Matrix
-            for(int row = 0; row < mat.length-1; row++){
-                for(int col = 0; col < mat[row].length-1; col++){
-                    mat[row][col]=input.nextInt();
-                }
-            }
+            int[][] m1 = new int[5][5];
 
-            for(int r = 0; r < mat.length-1; r++){
-                for(int c = 0; c < mat[0].length-1; c++){
-                    System.out.print(mat[r][c]+ " ");
-
+            for (int x = 0; x < m1.length; x++) {
+                for (int g = 0; g < m1[0].length; g++) {
+                    m1[x][g] = input.nextInt();
+                    System.out.print(m1[x][g] + "\t");
 
                 }
-
-
                 System.out.println();
             }
 
+            int mDiag = 0;
+            for (int h = 0; h < 5; h++) {
+                mDiag += m1[h][h];
+            }
+            System.out.println("Main Diagonal Sum: " + mDiag);
 
-        } catch (IOException e) {
+            int dig1 = 0;
+            for (int h = 0; h < 5; h++) {
+                dig1 += m1[h][4-h];
+            }
+            System.out.println("Other Diagonal Sum: " + dig1);
+
+
+
+
+        }
+        catch (IOException e) {
             System.out.println("Can't find data file!");
         }
     }

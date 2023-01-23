@@ -18,6 +18,9 @@ public class Cl213b {
         else if (myQuant > 199 && myQuant < 300) myPrice = 5.40;
         else if (myQuant >= 300) myPrice = 5.15;
         myAmt = myPrice * myQuant;
+
+
+
     }
     public String toString() {
         return "Price = $" + myPrice + "\tAmount Due = $" + String.format("%.2f",myAmt);
