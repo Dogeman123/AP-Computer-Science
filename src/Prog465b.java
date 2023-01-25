@@ -5,7 +5,7 @@ class Prog465b {
         try {
             int count = 0;
             int[][] nums = new int[1][1];
-            Scanner input = new Scanner(new File ("data/prog465b.dat")
+            Scanner input = new Scanner(new File ("data/prog465b.dat"));
 
             int[][] originalTable = new int[1][1];
             for (int i = 0; i < originalTable.length; i++) {
