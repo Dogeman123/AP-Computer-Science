@@ -5,12 +5,18 @@ public class Prog477a {
     public static void main(String[] args) {
         try {
             Scanner input = new Scanner(new File("data/prog477a.dat"));
-            int[][] mat = new int[4][4];
+            int[][] mat = new int[33][2];
             for(int row = 0; row < mat.length-1; row++){
-                for(int col = 0; col < mat[col].length-1; col++){
+                for(int col = 0; col < mat[col].length; col++){
                     mat[row][col] = input.nextInt();
                 }
             }
+
+
+
+
+
+
 
             for (int[] row : mat){
                 for (int n : row){
