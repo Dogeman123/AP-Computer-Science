@@ -1,4 +1,4 @@
 package Prog702q;
 
-public class Busses {
+public class Busses extends Vehicles{
 }

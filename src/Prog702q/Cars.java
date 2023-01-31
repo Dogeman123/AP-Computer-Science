@@ -1,5 +1,5 @@
 package Prog702q;
 
-public class Cars {
+public class Cars extends Vehicles {
 
 }
