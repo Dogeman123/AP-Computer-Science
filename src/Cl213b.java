@@ -8,7 +8,7 @@ public class Cl213b {
 
     public Cl213b(int quantity ){
         myQuant= quantity;
-        myPrice=0;
+        myPrice = 0;
         myAmt = 0;
 
     }
