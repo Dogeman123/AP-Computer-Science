@@ -6,7 +6,9 @@ import java.io.File;
 public class Prog702q {
     public static void main(String[] args) {
         try {
-            Scanner input = new Scanner(new File("data/prog285b.dat"));
+            Scanner input = new Scanner(new File("data/702q.dat"));
+
+
 
 
 

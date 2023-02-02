@@ -1,16 +1,10 @@
 package Prog702q;
 
 public class Vehicles implements names{
-  //  private String myName;
-    private int myTire;
-    private double myValue;
+private String myName;
 
-    public Vehicles(int tire, double value){
-      //  myName = name;
-        myTire = tire;
-        myValue = tire;
+    public Vehicles(String fn){
+        myName = fn;
     }
-   // public String getName() { return myName; }
-    public int getTire() { return  myTire; }
-    public double getValue() { return myValue;}
+    public String getName() { return myName; }
 }
