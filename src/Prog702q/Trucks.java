@@ -9,5 +9,5 @@ package Prog702q;
     mymiles = miles;
 
     }
-    public double getMiles() { return mymiles;}
+    public double getMiles() { return mymiles; }
 }
