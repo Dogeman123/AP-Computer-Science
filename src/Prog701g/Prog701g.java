@@ -14,7 +14,7 @@ public class Prog701g {
                 String f = input.next();
                 String l = input.next();
 
-                if(num ==1){
+                if(num == 1){
                     double g = input.nextDouble();
                     Person p = new Student(f, l, g);
                     list.add(p);
