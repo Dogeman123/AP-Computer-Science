@@ -8,5 +8,5 @@ public class Trucks extends Vehicles{
         super(n);
     mymiles = m;
     }
-    public double getMiles() { return mymiles; }
+    public double getMiles() { return mymiles;}
 }
