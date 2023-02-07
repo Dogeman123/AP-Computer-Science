@@ -39,7 +39,7 @@ public class Gene extends Fasta{
 
         // Fill in the rest of the matrix
         for(int lcv = 1; lcv < matrix.length; lcv++){
-            for(int lcv2 = 1; lcv2 < matrix[lcv].length; lcv++){
+            for(int lcv2 = 1; lcv2 < matrix[lcv].length; lcv2++){
                 match = 0;
                 if(!getSequence().substring(lcv-1,lcv).equals(
                         other.getSequence().substring(lcv2-1,lcv2)))
@@ -56,11 +56,11 @@ public class Gene extends Fasta{
         int i = matrix.length - 1;
         int j = matrix[0].length - 1;
 
-        while (i> 0 && j > 0){
+        while (i > 0 && j > 0){
             match = 0;
             if(!getSequence().substring(i-1,i).equals(other.getSequence().substring(j-1,j)))
                 match = mismatchPenalty;
-            diag = matrix[i-1][j-1 + match];
+            diag = matrix[i-1][j-1] + match;
             left = matrix[i][j-1] +match;
             up = matrix[i-1][j] + gapPenalty;
 
@@ -69,8 +69,20 @@ public class Gene extends Fasta{
                 alignment2 = other.getSequence().substring(j-1,j) + alignment2;
                 i--;
                 j--;
+            } else if (matrix[i][j] == left){
+                alignment1 = "_" + alignment1;
+                alignment2 = other.getSequence().substring(j-1,j) + alignment2;
+            } else if (matrix[i][j] == up) {
+                alignment1 = this.getSequence().substring(i-1,i) + alignment1;
+                alignment2 = "_" + alignment2;
+                i--;
             }
         }
-        return -1;
+        // Print alignment
+        int score = matrix[matrix.length-1][matrix[0].length-1];
+        System.out.println(this.organism + " gene " + this.geneID + ": \n\t" + alignment1);
+        System.out.println(other.organism + " gene " + other.geneID + ": \n\t" + alignment2);
+        System.out.println("Alignment score: " + score);
+        return score;
     }
 }

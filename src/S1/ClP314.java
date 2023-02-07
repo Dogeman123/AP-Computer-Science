@@ -1,3 +1,5 @@
+package S1;
+
 public class ClP314 {
     private int Nyvotes;
     private int Nyvotes2;
