@@ -15,7 +15,7 @@ public class Prog702q {
 
                 if(num == 1){
                     double g = input.nextDouble();
-                    //Vehicles p = new Cars(n,t,w);\\
+
                 }
 
 

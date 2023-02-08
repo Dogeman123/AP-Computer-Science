@@ -6,7 +6,7 @@ import java.io.File;
 public class Prog702p {
     public static void main(String[] args) {
         try {
-            Scanner input = new Scanner(new File("data/prog701g.dat"));
+            Scanner input = new Scanner(new File("data/prog702q.dat"));
             List<animals> list = new ArrayList<animals>();
 
             int num = input.nextInt();

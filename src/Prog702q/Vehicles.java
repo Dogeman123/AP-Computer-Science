@@ -4,10 +4,11 @@ public class Vehicles implements names{
 private String myName;
 private int myTire;
 private double myValue;
-    public Vehicles(String fn, int tire, double value){
+
+    public Vehicles(String fn, int t, double v){
         myName = fn;
-        myTire = tire;
-        myValue = value;
+        myTire = t;
+        myValue = v;
     }
     public String getName() { return myName; }
     public int getTire() { return myTire;}

@@ -4,10 +4,9 @@ package Prog702q;
  //miles
     private double mymiles;
 
-    public Trucks(String n, int t, double miles){
-        super(n,t,miles);
-    mymiles = miles;
-
+    public Trucks(String n, int t, double v){
+        super(n,t,v);
+       double miles = mymiles;
     }
     public double getMiles() { return mymiles;}
 }

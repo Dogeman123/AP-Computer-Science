@@ -9,7 +9,7 @@ public class animals implements names{
         myWord = w;
 
     }
-    public String getName() { return myName;}
-    public String getWord() { return myWord;}
+    public String getName() { return myName; }
+    public String getWord() { return myWord; }
 
 }
