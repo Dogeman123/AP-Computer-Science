@@ -12,9 +12,6 @@ private double myValue;
     }
     public String getName() { return myName; }
     public int getTire() { return myTire;}
-    public double myValue() {
-        return 50000;
-    }
-
-    public double getValue() {return myValue;}
+    public double myValue() {return 50000;}
+ //   public double getValue() {return myValue;}
 }

@@ -10,9 +10,9 @@ public class Prog702p {
             List<animals> list = new ArrayList<animals>();
 
             int num = input.nextInt();
-
             while (num != 99){
                String n = input.next();
+
             }
 
 

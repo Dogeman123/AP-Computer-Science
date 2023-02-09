@@ -1,7 +1,7 @@
 package Prog702q;
 
  public class Trucks extends Vehicles{
- //miles
+ //  miles
     private double mymiles;
 
     public Trucks(String n, int t, double v){
