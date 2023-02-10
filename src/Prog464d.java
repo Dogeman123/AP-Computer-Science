@@ -9,7 +9,7 @@ public class Prog464d {
         int[][] transposed = new int[mat[0].length][mat.length];
         for(int row = 0; row < mat.length; row++){
             for(int col =0; col < mat[0].length; col++){
-                transposed[col][row] = mat[row][col];
+               transposed[col][row] = mat[row][col];
             }
         }
         return transposed;
@@ -17,9 +17,8 @@ public class Prog464d {
     public static void main(String[] args) {
         try {
             Scanner input = new Scanner(new File("data/prog464a.dat"));
-            int[][] mat = new int[5][5]; // 5 rows 5 cols
+            int[][] mat = new int[5][5];
 
-            // Read in matrix in row-major order
             for(int r = 0; r < mat.length; r++){
                 for(int c = 0; c < mat[0].length; c++){
                     mat[r][c] = input.nextInt();
@@ -38,7 +37,7 @@ public class Prog464d {
 
             System.out.println("\nTransposed matrix:");
             for(int row = 0; row < Tmat.length; row++){
-                for(int col =0; col < Tmat[0].length; col++){
+                for(int col = 0; col < Tmat[0].length; col++){
                     System.out.print(Tmat[row][col] + " ");
                 }
                 System.out.println();

@@ -1,3 +1,5 @@
+package S1;
+
 // Michael Verdin
 // 11/15/2022
 // Big Array

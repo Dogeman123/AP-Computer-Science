@@ -1,5 +1,7 @@
+package S1;
+
 // michael Verdin
-// ArrayTest
+// S1.ArrayTest
 // 11/8/22
 public class ArrayTest {
     public static void main(String[] args) {
