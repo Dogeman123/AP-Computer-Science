@@ -1,6 +1,7 @@
+package S1;
 
-    /**
-     * Cat
+/**
+     * S1.Cat
      * Use with Cats with BigArrayLists
      */
     public class Cat {

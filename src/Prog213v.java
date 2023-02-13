@@ -1,6 +1,9 @@
 // Michael Verdin
 //12/5/2022
 //Prog213v
+import S1.ArrayListTest;
+import S1.Transaction;
+
 import java.util.*;
 import java.io.*;
 public class Prog213v {
@@ -10,7 +13,7 @@ public class Prog213v {
             ArrayList<Transaction> list = new ArrayList<Transaction>();
 
             double balance = input.nextDouble();
-            Bank wow = new Bank(balance);
+            ArrayListTest.Bank wow = new ArrayListTest.Bank(balance);
 
             String code = input.next();
             while (!(code.equals("E"))){
