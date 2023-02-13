@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.File;
 
 public class Prog702p {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         try {
             Scanner input = new Scanner(new File("data/prog702q.dat"));
             List<animals> list = new ArrayList<animals>();
