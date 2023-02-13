@@ -1,13 +1,14 @@
 package Prog702q;
 
-public class Vehicles implements names{
+public class Vehicles {
     private String myName;
-    private int myTire;
+    private int mytire;
 
     public Vehicles(String n, int t){
         myName = n;
-        myTire = t;
+        mytire = t;
+
     }
     public String getName() { return myName; }
-    private int getTire() {return myTire;}
+    private int getmyTire() {return mytire;}
 }
