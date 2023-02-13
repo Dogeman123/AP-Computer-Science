@@ -4,7 +4,7 @@ public class Hiccas  {
     private double myWorth;
 
     public Hiccas(String n, String w, double fw){
-        super(n, w);
+        super(n,w);
         myWorth = fw;
 
     }
