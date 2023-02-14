@@ -1,3 +1,5 @@
+package S1;
+
 import java.util.*;
 //Michael Verdin
 // 09/13/22

@@ -1,9 +1,9 @@
 package Prog702p;
 
-public class Hiccas  {
+/*public class Hiccas  {
     private double myWorth;
 
-    public Hiccas(String n, String w, double fw){
+   public Hiccas(String n, String w, double fw){
         super(n,w);
         myWorth = fw;
 
@@ -11,3 +11,5 @@ public class Hiccas  {
 
     public double getWorth() {return myWorth;}
 }
+
+   */
