@@ -10,5 +10,5 @@ public class Vehicles {
 
     }
     public String getName() { return myName; }
-    private int getmyTire() {return mytire;}
+    private int getTire() {return mytire;}
 }
