@@ -1,6 +1,8 @@
 // Michael verdin
 // Prog213fArray
 //11/8/22
+import S1.Cl213f;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;

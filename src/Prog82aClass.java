@@ -1,5 +1,7 @@
 // Michael Verdin
 // Prog 82aClass
+import S1.Cl82a;
+
 import java.util.*;
 public class Prog82aClass {
     public static void main(String[] args) {

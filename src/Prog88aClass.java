@@ -1,5 +1,7 @@
 // Michael Verdin
 // Prog88aClass
+import S1.Cl88a;
+
 import java.util.*;
 public class Prog88aClass {
     public static void main(String[] args){

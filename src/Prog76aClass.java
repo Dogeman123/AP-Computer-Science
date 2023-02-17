@@ -1,5 +1,7 @@
 // Michael Verdin
 // Prog76aClass
+import S1.Cl76a;
+
 import java.util.*;
 public class Prog76aClass {
     public static void main(String[] args){
