@@ -1,8 +1,7 @@
 package Prog702p;
 
-/*public class Hiccas  {
+public class Hiccas extends animals  {
     private double myWorth;
-
    public Hiccas(String n, String w, double fw){
         super(n,w);
         myWorth = fw;
@@ -12,4 +11,3 @@ package Prog702p;
     public double getWorth() {return myWorth;}
 }
 
-   */

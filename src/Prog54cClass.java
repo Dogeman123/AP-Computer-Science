@@ -1,6 +1,7 @@
 // Michael Verdin
 // prog54cClass
-import java.util.*;
+import S1.Cl54c;
+
 public class Prog54cClass {
     public static void main(String[] args) {
 
