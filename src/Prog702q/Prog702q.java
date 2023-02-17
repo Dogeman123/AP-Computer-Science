@@ -6,7 +6,7 @@ import java.io.File;
 public class Prog702q{
     public static void main(String[] args) {
         try {
-            Scanner input = new Scanner(new File("data/prog702q.dat"));
+            Scanner input = new Scanner(new File("data/prog702q.txt"));
             List<Vehicles> list = new ArrayList<Vehicles>();
 
             int num = input.nextInt();
@@ -35,9 +35,9 @@ public class Prog702q{
             int CarssCnt = 0;
             int totTruckmiles = 0;
             int walliesCnt = 0;
-            String bussesnames = String.valueOf(0);
+            String bussesnames = "";
             int bussesCnt = 0;
-
+            String sm = "jdfalkjhflakshfafdasdfasdfsaf";
             for (Vehicles x : list) {
                 if (x instanceof Cars) {
                     totCarWorth += ((Cars) x).getValue();
@@ -47,11 +47,17 @@ public class Prog702q{
                     totTruckmiles += ((Trucks) x).getMymiles();
                     walliesCnt++;
                 }
-              /*(  if (x instanceof Busses) {
+                if (x instanceof Busses) {
                     String xstring = ((Busses)x).getCity();
-                    bussesnames += xstring.length();
+                    bussesnames < bussesnames.l;
                     bussesCnt++;
-                }*/
+
+                    if (xstring.length() > bussesnames.length())
+                        bussesnames = xstring;
+                    if(xstring.length() < sm.length())
+                        sm = xstring;
+
+                }
             }
 
 

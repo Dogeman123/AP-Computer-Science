@@ -1,6 +1,6 @@
 // Michael Verdin
 import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Prog477a {
@@ -13,8 +13,8 @@ public class Prog477a {
                 int grade = input.nextInt();
                 counts[grade-1][gender-1]++;
             }
-        } catch (FileNotFoundException e) {
-            System.out.println("Error: File not found.");
+        } catch (IOException e) {
+            System.out.println("Can't find the data file!");
         }
 
 
