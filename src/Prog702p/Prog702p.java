@@ -4,7 +4,7 @@ import java.util.*;
 import java.io.IOException;
 import java.io.File;
 
-/*public class Prog702p {
+public class Prog702p {
     public static void main(String[] args){
         try {
             Scanner input = new Scanner(new File("data/prog701g.dat"));
@@ -74,5 +74,5 @@ import java.io.File;
 The average value of the Hicca fur is: 3.06
 The average number of steps taken by the Wallies is: 63.20
 The average size of the Beepers words is: 7.25
+*/
 
- */
