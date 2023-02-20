@@ -11,5 +11,4 @@ public class animals implements names{
     }
     public String getName() { return myName; }
     public String getWord() { return myWord; }
-
 }

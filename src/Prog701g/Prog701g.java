@@ -43,6 +43,7 @@ public class Prog701g {
                 }
                 if (x instanceof Teacher)
                     totstus += ((Teacher)x).getNUmStuds();
+
                 if(x instanceof Admin){
                     String xstring = ((Admin)x).getFavw();
 

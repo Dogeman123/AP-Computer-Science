@@ -34,10 +34,12 @@ public class Prog702q{
             double totCarWorth = 0;
             int CarssCnt = 0;
             int totTruckmiles = 0;
+            int truckcnt =0;
             int walliesCnt = 0;
             String bussesnames = "";
             int bussesCnt = 0;
             String sm = "jdfalkjhflakshfafdasdfasdfsaf";
+
             for (Vehicles x : list) {
                 if (x instanceof Cars) {
                     totCarWorth += ((Cars) x).getValue();
@@ -45,7 +47,7 @@ public class Prog702q{
                 }
                 if (x instanceof Trucks) {
                     totTruckmiles += ((Trucks) x).getMymiles();
-                    walliesCnt++;
+                   truckcnt++;
                 }
 
                 }
