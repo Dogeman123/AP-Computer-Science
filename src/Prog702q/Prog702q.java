@@ -47,19 +47,8 @@ public class Prog702q{
                     totTruckmiles += ((Trucks) x).getMymiles();
                     walliesCnt++;
                 }
-                if (x instanceof Busses) {
-                    String xstring = ((Busses)x).getCity();
-                    bussesnames < bussesnames.l;
-                    bussesCnt++;
-
-                    if (xstring.length() > bussesnames.length())
-                        bussesnames = xstring;
-                    if(xstring.length() < sm.length())
-                        sm = xstring;
 
                 }
-            }
-
 
 
             System.out.println("The total worth of the cars is: " + totCarWorth);

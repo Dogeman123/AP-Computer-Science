@@ -1,4 +1,5 @@
 package Prog703s;
 
-public class Computers {
+public class Computers implements comps{
+
 }
