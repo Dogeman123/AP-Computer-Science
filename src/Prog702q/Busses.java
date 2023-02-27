@@ -1,13 +1,17 @@
 package Prog702q;
 //City
+public class Busses extends Vehicles{
+    private String myHome;
+    private double myValue;
 
-public class Busses extends Vehicles {
-    private String myCity;
-    private int myValue;
-    public Busses(String n, int t, String C){
+    public Busses(String n, int t, String h) {
         super(n,t);
-        myCity = C;
+        myHome = h;
         myValue = 50000;
     }
-    public String getCity() { return myCity; }
+
+    public String getHome() {return myHome;}
+    public double getValue() {return myValue;}
+
+
 }
