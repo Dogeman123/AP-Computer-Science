@@ -38,7 +38,7 @@ public class Prog702q{
             int walliesCnt = 0;
             String bussesnames = "";
             int bussesCnt = 0;
-            String sm = "jdfalkjhflakshfafdasdfasdfsaf";
+            String sm = "jdfalkjhflakshfafdasdfasdufsaf";
 
             for (Vehicles x : list) {
                 if (x instanceof Cars) {
