@@ -1,3 +1,5 @@
+import S1.Cl408a;
+
 public class SortingAlgs {
     public static int[] bubbleSort(int[] array){
         for(int lcv = 0; lcv < array.length; lcv ++){

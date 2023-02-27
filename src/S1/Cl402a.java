@@ -1,3 +1,5 @@
+package S1;
+
 public class Cl402a {
     private int myScore;
     private double myAverage;

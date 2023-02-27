@@ -13,7 +13,7 @@ public class ArrayTest {
                 System.out.print(nums[lcv] + " ");
             System.out.println();
 
-            char[] hello = "Hello, world!".toCharArray();
+            char[] hello = "S1.Hello, world!".toCharArray();
         //for each loop
         for(char x : hello){
             System.out.print(x);

@@ -1,3 +1,5 @@
+package S1;
+
 public class Cl408a {
     private int myID;
     private int myScore;

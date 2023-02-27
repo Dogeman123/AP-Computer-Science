@@ -1,6 +1,8 @@
 // Michael Verdin
 // prog505a
 // 1/3/23
+import S1.Cl505a;
+
 import java.util.*;
 import java.io.IOException;
 import java.io.File;

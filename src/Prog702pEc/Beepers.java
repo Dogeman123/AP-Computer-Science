@@ -1,7 +1,5 @@
 package Prog702pEc;
 
-import Prog702p.animals;
-
 public class Beepers extends animals {
     private String mySecretWord;
 

@@ -1,3 +1,5 @@
+package S1;
+
 public class CllP9 {
     private int myyear;
     private int myMonth;

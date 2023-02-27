@@ -1,3 +1,5 @@
+package S1;
+
 public class Cl215h {
     private double myconst1;
     private double myconst2;

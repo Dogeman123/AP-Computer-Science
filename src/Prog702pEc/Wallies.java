@@ -1,6 +1,5 @@
 package Prog702pEc;
 
-import Prog702p.animals;
 
 public class Wallies extends animals {
     private int mysteps;

@@ -1,3 +1,5 @@
+package S1;
+
 public class CllP310 {
     private int NumB;
     private int numF;

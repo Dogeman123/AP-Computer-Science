@@ -1,3 +1,5 @@
+import S1.InternetCustomer;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -6,8 +8,7 @@ import java.util.Scanner;
 // Michael Verdin
 // Prog602b
 // 11/30/22
-import java.io.*;
-import java.util.*;
+
 
 public class Prog602b {
     public static void main(String[] args) {

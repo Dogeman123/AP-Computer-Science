@@ -1,3 +1,5 @@
+package S1;
+
 import java.util.*;
 import java.io.*;
 public class Prog209a {

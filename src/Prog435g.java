@@ -1,6 +1,8 @@
 // Michael Verdin
 // Prog435g
 // 11/10/22
+import S1.Cl435g;
+
 import java.util.*;
 import java.io.*;
 public class Prog435g {
@@ -31,7 +33,7 @@ public class Prog435g {
             for(int lcv = 0; lcv < count; lcv++){
                 golfers[lcv] = new Cl435g(scores[lcv]);
 
-                //Cl435g myguy = new Cl435g(Scores[lcv});
+                //S1.Cl435g myguy = new S1.Cl435g(Scores[lcv});
                 //golfers[lcv] = myguy;
             }
 

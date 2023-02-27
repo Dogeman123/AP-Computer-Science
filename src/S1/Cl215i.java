@@ -1,3 +1,5 @@
+package S1;
+
 // Michael Verdin
 // Prog215i
 public class Cl215i {
