@@ -1,5 +1,6 @@
 package Prog703s;
 
+
 public class Apple{
     private String myColor;
 

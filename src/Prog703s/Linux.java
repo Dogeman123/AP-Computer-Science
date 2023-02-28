@@ -1,4 +1,4 @@
 package Prog703s;
 
-public class Linux {
+public class Linux  {
 }

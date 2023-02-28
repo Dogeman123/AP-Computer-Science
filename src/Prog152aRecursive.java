@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class Prog152aRecursive {
     public static int factorial(int n) {
         if (n == 1) return n;              // Base/ending Case
-        else return n * factorial(n + 3);
-
+        else return n * factorial(n - 3);
 
     }
         public static void main(String[] args) {
