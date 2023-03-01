@@ -47,9 +47,20 @@ public class Prog505w {
                     animals.add(fred);
                     hay -= hayEaten;
                     corn -= cornEaten;
+
+                    int tothorsew = 0;
+
+                    for (int i = 0; i < 2; i++) {
+                        for (int cnt = 0; cnt < 5; cnt++) {
+                            tothorsew += [cnt][i];
+
                 }
+
             }
-            //....
+            //Horse Crap
+            System.out.println("Horses");
+            System.out.print("Name\tWeight\t# of hay bales eaten\t\t# of corncobs eaten\t\t# of rides given\t\tCost of rides");
+            System.out.println();
 
             double minHorse = Double.MAX_VALUE;
             int minHorseIndex = 0;
@@ -63,7 +74,29 @@ public class Prog505w {
                 }
             }
 
+
+
+/*
+1.The program should report the income of the day and the cumulative
+ weight of all animals.
+ 2.The program should then determine if there
+ is enough food to feed all the animals.
+  3.The program should report
+ the cow location that makes the most money.
+ 4. The program should report
+  the horse location that makes the least money.
+   4.The amount of money a cow makes is the money made for milk minus the cost
+   of the feed for that animal for that day.
+   5.The amount  money a horse makes is the money generated from giving rides
+   minus the cost of the feed for that animal for that day.
+    6.When a horse gives it name, it always reports it twice.
+A pound of milk sells for $0.20.
+
+ */
+
+
             System.out.printf("Horse %s makes the least money\n",animals.get(minHorseIndex).getName());
+
         } catch (IOException e) {
             System.out.println("Can't find data file!");
         }
