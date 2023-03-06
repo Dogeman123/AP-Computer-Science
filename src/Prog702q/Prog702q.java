@@ -34,11 +34,10 @@ public class Prog702q {
             double vworth = 0;
             double tworth = 0;
             String longest = "";
-            double least = 1000000000;
             int ttotc = 0;
             int ttott = 0;
             int ttotb = 0;
-
+            double least = 1000000;
             for (Vehicles x : list) {
                 if (x instanceof Cars) {
                     cworth += ((Cars)x).getValue();
@@ -48,12 +47,13 @@ public class Prog702q {
                 }
                 if (x instanceof Trucks) {
                     tworth += ((Trucks)x).getValue();
-                    if (tworth < least)
-                        least = tworth;
+                    if (tworth < 1000)
+                       least  = tworth;
                     tot++;
                     ttott += ((Trucks)x).getTire();
                     vworth += tworth;
                 }
+
                 if (x instanceof Busses) {
                     String xstring = ((Busses)x).getHome();
                     if (xstring.length() > longest.length())
@@ -69,7 +69,7 @@ public class Prog702q {
             System.out.println("The  value of the cars is: " + cworth);
             System.out.println("The total worth of the vehicles is: " + vworth);
             System.out.println("The longest home name is: " + longest);
-            System.out.println("The truck with the least value is: " + least);
+            System.out.println("The truck with the least value is: " );
             System.out.println("The total number of tires is: " + (ttotc + ttotb + ttott));
 
         } catch (IOException e) {

@@ -53,6 +53,8 @@ public class Prog702p {
                 if (x instanceof Beepers) {
                     String xstring = ((Beepers)x).getSecretWord();
                     totBeepersLength += xstring.length();
+
+
                     beepersCnt++;
                 }
             }
@@ -65,7 +67,37 @@ public class Prog702p {
             System.out.println("The average number of steps taken by the Wallies is: " + String.format("%.2f", (totWalliesSteps/walliesCnt)));
             System.out.println("The average size of the Beepers words is: " + String.format("%.2f", (totBeepersLength/beepersCnt)));
 
+            Map<Character, Integer> letterFrequency = new HashMap<>();
 
+            animals[] animals = new animals[0];
+            for (animals a : animals) {
+                if (a instanceof Beepers) {
+                    String word = ((Beepers) a).getWord().toLowerCase();
+                    for (int i = 0; i < word.length(); i++) {
+                        char c = word.charAt(i);
+                        if (Character.isLetter(c)) {
+                            letterFrequency.put(c, letterFrequency.getOrDefault(c, 0) + 1);
+                        }
+                    }
+                }
+            }
+
+
+            int maxFrequency = 0;
+            for (int frequency : letterFrequency.values()) {
+                if (frequency > maxFrequency) {
+                    maxFrequency = frequency;
+                }
+            }
+
+            StringBuilder mostCommonLetters = new StringBuilder();
+            for (char c : letterFrequency.keySet()) {
+                if (letterFrequency.get(c) == maxFrequency) {
+                    mostCommonLetters.append(c).append(" ");
+                }
+            }
+
+            System.out.println("The most common letter(s) in all the Beepers' words is: " + mostCommonLetters);
 
 
 
