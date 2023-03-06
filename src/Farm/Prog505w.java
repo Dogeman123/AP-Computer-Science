@@ -52,7 +52,6 @@ public class Prog505w {
 
                     for (int i = 0; i < 2; i++) {
                         for (int cnt = 0; cnt < 5; cnt++) {
-                            tothorsew += [cnt][i];
 
                 }
 
