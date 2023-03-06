@@ -18,8 +18,8 @@ public class Prog505w {
             int cowRows = input.nextInt();
             int cowPens = input.nextInt();
 
-            for(int r = 0; r < cowRows; r++){
-                for(int p = 0; p < cowPens; p++){
+            for (int r = 0; r < cowRows; r++) {
+                for (int p = 0; p < cowPens; p++) {
                     String name = input.next();
                     int weight = input.nextInt();
                     int milk = input.nextInt();
@@ -35,15 +35,15 @@ public class Prog505w {
             int horseRows = input.nextInt();
             int horsePens = input.nextInt();
 
-            for(int r = 0; r < horseRows; r++){
-                for(int p = 0; p < horsePens; p++){
+            for (int r = 0; r < horseRows; r++) {
+                for (int p = 0; p < horsePens; p++) {
                     String name = input.next();
                     int weight = input.nextInt();
                     int hayEaten = input.nextInt();
                     int cornEaten = input.nextInt();
                     int rides = input.nextInt();
                     double rideCost = input.nextDouble();
-                    Horse fred = new Horse(name, weight, hayEaten, cornEaten, rides ,rideCost);
+                    Horse fred = new Horse(name, weight, hayEaten, cornEaten, rides, rideCost);
                     animals.add(fred);
                     hay -= hayEaten;
                     corn -= cornEaten;
@@ -52,27 +52,26 @@ public class Prog505w {
 
                     for (int i = 0; i < 2; i++) {
                         for (int cnt = 0; cnt < 5; cnt++) {
-                            tothorsew += [cnt][i];
 
-                }
+                        }
 
-            }
-            //Horse Crap
-            System.out.println("Horses");
-            System.out.print("Name\tWeight\t# of hay bales eaten\t\t# of corncobs eaten\t\t# of rides given\t\tCost of rides");
-            System.out.println();
-
-            double minHorse = Double.MAX_VALUE;
-            int minHorseIndex = 0;
-            for(int lcv = 0; lcv < animals.size(); lcv++){
-                if(animals.get(lcv) instanceof Horse){
-                    Horse horse = (Horse)animals.get(lcv);
-                    if(horse.value(cornCost, hayCost) < minHorse){
-                        minHorse = horse.value(cornCost, hayCost);
-                        minHorseIndex = lcv;
                     }
-                }
-            }
+                    //Horse Crap
+                    System.out.println("Horses");
+                    System.out.print("Name\tWeight\t# of hay bales eaten\t\t# of corncobs eaten\t\t# of rides given\t\tCost of rides");
+                    System.out.println();
+
+                    double minHorse = Double.MAX_VALUE;
+                    int minHorseIndex = 0;
+                    for (int lcv = 0; lcv < animals.size(); lcv++) {
+                        if (animals.get(lcv) instanceof Horse) {
+                            Horse horse = (Horse) animals.get(lcv);
+                            if (horse.value(cornCost, hayCost) < minHorse) {
+                                minHorse = horse.value(cornCost, hayCost);
+                                minHorseIndex = lcv;
+                            }
+                        }
+                    }
 
 
 
@@ -95,12 +94,12 @@ A pound of milk sells for $0.20.
  */
 
 
-            System.out.printf("Horse %s makes the least money\n",animals.get(minHorseIndex).getName());
-
+                    System.out.printf("Horse %s makes the least money\n", animals.get(minHorseIndex).getName());
+                }
+            }
         } catch (IOException e) {
             System.out.println("Can't find data file!");
         }
     }
 }
-
 
