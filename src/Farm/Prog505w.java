@@ -15,6 +15,8 @@ public class Prog505w {
             int corn = input.nextInt();
             double cornCost = input.nextDouble();
 
+
+            // Cow Crap
             int cowRows = input.nextInt();
             int cowPens = input.nextInt();
 
@@ -32,6 +34,7 @@ public class Prog505w {
                 }
             }
 
+            //Horse Crap
             int horseRows = input.nextInt();
             int horsePens = input.nextInt();
 
@@ -48,12 +51,7 @@ public class Prog505w {
                     hay -= hayEaten;
                     corn -= cornEaten;
 
-                    int tothorsew = 0;
 
-                    for (int i = 0; i < 2; i++) {
-                        for (int cnt = 0; cnt < 5; cnt++) {
-
-                        }
 
                     }
                     //Horse Crap
@@ -69,6 +67,8 @@ public class Prog505w {
                             if (horse.value(cornCost, hayCost) < minHorse) {
                                 minHorse = horse.value(cornCost, hayCost);
                                 minHorseIndex = lcv;
+
+                                double totHcost = cornCost + hayCost;
                             }
                         }
                     }
@@ -78,25 +78,35 @@ public class Prog505w {
 /*
 1.The program should report the income of the day and the cumulative
  weight of all animals.
+
  2.The program should then determine if there
  is enough food to feed all the animals.
+
   3.The program should report
  the cow location that makes the most money.
+
  4. The program should report
   the horse location that makes the least money.
-   4.The amount of money a cow makes is the money made for milk minus the cost
+
+   5.The amount of money a cow makes is the money made for milk minus the cost
    of the feed for that animal for that day.
-   5.The amount  money a horse makes is the money generated from giving rides
+
+   6.The amount  money a horse makes is the money generated from giving rides
    minus the cost of the feed for that animal for that day.
-    6.When a horse gives it name, it always reports it twice.
+    7.When a horse gives it name, it always reports it twice.
 A pound of milk sells for $0.20.
 
  */
 
+    System.out.println();
+
+
+
+
 
                     System.out.printf("Horse %s makes the least money\n", animals.get(minHorseIndex).getName());
                 }
-            }
+
         } catch (IOException e) {
             System.out.println("Can't find data file!");
         }
