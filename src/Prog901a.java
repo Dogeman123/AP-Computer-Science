@@ -2,6 +2,7 @@ import java.util.*;
 import java.io.IOException;
 import java.io.File;
     public class Prog901a {
+
         public static void printFile(Scanner input) {
             String str = input.next();
             System.out.println(str);
@@ -22,8 +23,15 @@ import java.io.File;
             try {
                 Scanner input = new Scanner(new File("data/prog512h.dat"));
 
+                System.out.println(input.next());
+
+
+
+
 
                 System.out.println(reverseString(input.next()));
+
+
             } catch (IOException e) {
                 System.out.println("Can't find data file!");
             }

@@ -72,9 +72,6 @@ public class Prog505w {
                             }
                         }
                     }
-
-
-
 /*
 1.The program should report the income of the day and the cumulative
  weight of all animals.
