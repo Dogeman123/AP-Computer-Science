@@ -1,3 +1,5 @@
+package S1;
+
 public class LoopTest {
     public static void main(String[] args){
         int lcv = 1;
