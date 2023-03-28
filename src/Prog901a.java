@@ -3,20 +3,16 @@ import java.io.IOException;
 import java.io.File;
     public class Prog901a {
 
-        public static void printFile(Scanner input) {
-            String str = input.next();
-            System.out.println(str);
-            String back = reverseString(str);
-            System.out.println("Backwards:");
-            System.out.print(back);
+        static boolean reverseString(String s) {
+            if (s == null || s.length() <= 1) {
+                System.out.println(s);
+            }
+            else {
+                            System.out.print(s.charAt(s.length() - 1));
+            reverseString(s.substring(0, s.length() - 1));
 
         }
-
-        public static String reverseString(String s) {
-            while (s == null || s.length() <= 1) {
-                return s;
-            }
-            return reverseString(s.substring(1))+s.charAt(0);
+            return false;
         }
 
         public static void main(String[] args) {
@@ -25,12 +21,7 @@ import java.io.File;
 
                 System.out.println(input.next());
 
-
-
-
-
-                System.out.println(reverseString(input.next()));
-
+                System.out.print(reverseString(input.next()));
 
             } catch (IOException e) {
                 System.out.println("Can't find data file!");
