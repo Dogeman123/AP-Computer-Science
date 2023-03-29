@@ -3,7 +3,20 @@
 
 import java.util.Scanner;
 
+
 public class Prog910b {
+
+    public void bconverse(int n, int base) {
+        while(n % 10 != 0){
+            n = n % base;
+
+        }
+
+    }
+
+
+
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -13,10 +26,8 @@ public class Prog910b {
         System.out.println("Enter the new base: ");
         int base = input.nextInt();
 
-        double r1 = num / 10.0;
-
-        System.out.println("test: " + r1);
 
 
+        System.out.println("The number " + num + " [Base 10] " + " = " + "" + "[base " + base + "]");
     }
 }
