@@ -6,7 +6,7 @@ import java.io.File;
 
             String str = input.nextLine();
             System.out.println("Normal: ");
-            System.out.println(str);
+            System.out.println(str );
             String back = reverseString(str);
             System.out.println("Backwards: ");
             System.out.print(back);
