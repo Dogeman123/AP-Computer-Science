@@ -1,4 +1,4 @@
-package Q3.ElevensLab.Elevens.ActivityStarterCode.Activity3StarterCode;
+package ElevensLab.Activity3StarterCode;
 
 /**
  * This class provides a convenient way to test shuffling methods.
@@ -53,6 +53,7 @@ public class Shuffler {
 	 */
 	public static void perfectShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+
 	}
 
 	/**
