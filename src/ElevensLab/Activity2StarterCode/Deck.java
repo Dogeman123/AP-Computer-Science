@@ -1,4 +1,4 @@
-package Q3.ElevensLab.Elevens.ActivityStarterCode.Activity2StarterCode;
+package ElevensLab.Activity2StarterCode;
 
 import java.util.List;
 import java.util.ArrayList;
