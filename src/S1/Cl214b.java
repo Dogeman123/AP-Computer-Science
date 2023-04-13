@@ -1,7 +1,7 @@
 package S1;
 
 // Michael Verdin
-// Prog214b
+// S1.Prog214b
 public class Cl214b {
     private int myEmployeeN;
     private double myHours;

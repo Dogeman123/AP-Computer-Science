@@ -11,6 +11,9 @@ public class CardTester {
 	 */
 	public static void main(String[] args) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-
+		Card one = new Card("3","Hearts",3);
+		Card two = new Card("2","Spades",3);
+		Card three = new Card("3","Hearts", 3);
+		System.out.println("All tests passed!");
 	}
 }

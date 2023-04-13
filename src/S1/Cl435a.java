@@ -1,7 +1,7 @@
 package S1;
 
 // Michael Verdin
-// Prog435a
+// S1.Prog435a
 public class Cl435a {
     private int mycar;
     private double myfactor;

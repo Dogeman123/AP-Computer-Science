@@ -1,7 +1,7 @@
 package S1;
 
 // Michael verdin
-// Prog213fArray
+// S1.Prog213fArray
 //11/8/22
 public class Cl213f {
     private double myKwh;

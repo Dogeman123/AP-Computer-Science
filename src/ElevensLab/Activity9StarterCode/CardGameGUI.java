@@ -1,4 +1,4 @@
-package Q3.ElevensLab.Elevens.ActivityStarterCode.Activity9StarterCode;
+package ElevensLab.Activity9StarterCode;
 
 import java.awt.Point;
 import java.awt.Graphics;

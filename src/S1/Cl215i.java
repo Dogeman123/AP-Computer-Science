@@ -1,7 +1,7 @@
 package S1;
 
 // Michael Verdin
-// Prog215i
+// S1.Prog215i
 public class Cl215i {
     private double mygal;
     private int myvehicle;

@@ -1,5 +1,5 @@
 package S1;// Michael Verdin
-// Prog82aClass
+// S1.Prog82aClass
 
 public class Cl82a {
     private int limit;

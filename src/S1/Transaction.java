@@ -2,7 +2,7 @@ package S1;
 
 // Michael Verdin
 //12/5/2022
-//Prog213v
+//S1.Prog213v
 public class Transaction {
     private String myType;
     private double myAmount;

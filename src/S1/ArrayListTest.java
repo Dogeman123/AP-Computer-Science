@@ -24,7 +24,7 @@ public class ArrayListTest {
 
     // Michael Verdin
     //12/5/2022
-    //Prog213v
+    //S1.Prog213v
     public static class Bank {
         private double myAmount;
         public Bank(double amount){

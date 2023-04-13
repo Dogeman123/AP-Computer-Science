@@ -1,5 +1,5 @@
 package S1;// Michael Verdin
-// Prog88aClass
+// S1.Prog88aClass
 // 10/18/22
 
 public class Cl88a {

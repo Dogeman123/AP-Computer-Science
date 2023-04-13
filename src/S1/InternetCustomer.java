@@ -1,7 +1,7 @@
 package S1;
 
 // Michael Verdin
-// Prog602b
+// S1.Prog602b
 // 11/30/22
 public class InternetCustomer {
     private int myAccount;

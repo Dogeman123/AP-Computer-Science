@@ -1,7 +1,7 @@
 package S1;
 
 // Michael Verdin
-// Prog213b
+// S1.Prog213b
 // 11/7/22
 public class Cl213b {
     private int myQuant;
