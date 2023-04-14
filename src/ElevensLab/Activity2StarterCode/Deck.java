@@ -33,7 +33,10 @@ public class Deck {
 	 */
 	public Deck(String[] ranks, String[] suits, int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-
+	for(int i = 0; i < ranks.length; i++){
+		Card card = new Card(ranks[i], suits[i], values[i]);
+		cards[i] = card;
+	}
 	}
 
 
