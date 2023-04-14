@@ -6,12 +6,14 @@ import java.io.File;
     public class Prog901a {
         public static void printFile(Scanner input) {
 
+
             String str = input.nextLine();
             System.out.println("Normal: ");
-            System.out.println(str );
+            System.out.println(str);
             String back = reverseString(str);
             System.out.println("Backwards: ");
             System.out.print(back);
+
 
         }
 
@@ -25,6 +27,7 @@ import java.io.File;
         public static void main(String[] args) {
             try {
                 Scanner input = new Scanner(new File("data/prog512h.dat"));
+
                 printFile(input);
 
 
