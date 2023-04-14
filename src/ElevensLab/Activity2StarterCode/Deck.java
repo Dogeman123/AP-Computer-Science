@@ -35,7 +35,7 @@ public class Deck {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 	for(int i = 0; i < ranks.length; i++){
 		Card card = new Card(ranks[i], suits[i], values[i]);
-		cards[i] = card;
+		cards(i, card);
 	}
 	}
 
@@ -46,6 +46,7 @@ public class Deck {
 	 */
 	public boolean isEmpty() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+
 	}
 
 	/**
@@ -54,6 +55,7 @@ public class Deck {
 	 */
 	public int size() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+
 	}
 
 	/**
