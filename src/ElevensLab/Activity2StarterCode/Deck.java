@@ -47,6 +47,7 @@ public class Deck {
 	public boolean isEmpty() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 
+
 	}
 
 	/**
