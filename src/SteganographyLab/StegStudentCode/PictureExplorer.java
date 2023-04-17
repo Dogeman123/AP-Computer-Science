@@ -1,4 +1,4 @@
-package SteganographyLab.StegStudentCode;
+package Q3.SteganographyLab.StegStudentCode;
 
 import java.awt.*;
 import java.awt.event.*;

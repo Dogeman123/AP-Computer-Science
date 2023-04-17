@@ -1,4 +1,4 @@
-package ElevensLab.Activity10StarterCode;
+package ElevensLab.Activity8StarterCode;
 
 /**
  * Card.java
