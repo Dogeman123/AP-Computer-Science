@@ -1,4 +1,4 @@
-package SteganographyLab.StegStudentCode;
+package Q3.SteganographyLab.StegStudentCode;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
