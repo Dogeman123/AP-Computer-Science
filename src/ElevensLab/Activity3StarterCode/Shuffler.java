@@ -55,9 +55,11 @@ public class Shuffler {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
 			int k = 0;
 			for (int j =0; j <= 25; j ++){
-				
+
 				k += 2;
 			}
+			k = 1;
+
 	}
 
 	/**
