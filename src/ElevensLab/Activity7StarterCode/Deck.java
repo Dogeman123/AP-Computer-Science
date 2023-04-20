@@ -1,7 +1,9 @@
 package ElevensLab.Activity7StarterCode;
 
-import java.util.List;
+import ElevensLab.Activity9StarterCode.Card;
 
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * The Deck class represents a shuffled deck of cards.
@@ -13,7 +15,7 @@ public class Deck {
 	/**
 	 * cards contains all the cards in the deck.
 	 */
-	private List<ElevensLab.Activity2StarterCode.Card> cards;
+	private List<ElevensLab.Activity9StarterCode.Card> cards;
 
 	/**
 	 * size is the number of not-yet-dealt cards.
@@ -32,11 +34,14 @@ public class Deck {
 	 * @param values is an array containing all of the card point values.
 	 */
 	public Deck(String[] ranks, String[] suits, int[] values) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-	for(int i = 0; i < ranks.length; i++){
-		ElevensLab.Activity2StarterCode.Card card = new ElevensLab.Activity2StarterCode.Card(ranks[i], suits[i], values[i]);
-		cards(i, card);
-	}
+		cards = new ArrayList<ElevensLab.Activity9StarterCode.Card>();
+		for (int j = 0; j < ranks.length; j++) {
+			for (String suitString : suits) {
+				cards.add(new ElevensLab.Activity9StarterCode.Card(ranks[j], suitString, values[j]));
+			}
+		}
+		size = cards.size();
+		shuffle();
 	}
 
 
@@ -45,8 +50,7 @@ public class Deck {
 	 * @return true if this deck is empty, false otherwise.
 	 */
 	public boolean isEmpty() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-
+		return size == 0;
 	}
 
 	/**
@@ -54,8 +58,7 @@ public class Deck {
 	 * @return the number of undealt cards in this deck.
 	 */
 	public int size() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-
+		return size;
 	}
 
 	/**
@@ -63,8 +66,15 @@ public class Deck {
 	 * and reset the size to represent the entire deck.
 	 */
 	public void shuffle() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
-
+		for (int k = cards.size() - 1; k > 0; k--) {
+			int howMany = k + 1;
+			int start = 0;
+			int randPos = (int) (Math.random() * howMany) + start;
+			ElevensLab.Activity9StarterCode.Card temp = cards.get(k);
+			cards.set(k, cards.get(randPos));
+			cards.set(randPos, temp);
+		}
+		size = cards.size();
 	}
 
 	/**
@@ -73,8 +83,12 @@ public class Deck {
 	 *         previously dealt.
 	 */
 	public ElevensLab.Activity7StarterCode.Card deal() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-		return  deal();
+		if (isEmpty()) {
+			return null;
+		}
+		size--;
+		Card c = cards.get(size);
+		return c;
 	}
 
 	/**

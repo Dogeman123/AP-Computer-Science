@@ -2,6 +2,7 @@ package ElevensLab.Activity8StarterCode;
 
 import ElevensLab.Activity2StarterCode.Card;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -35,11 +36,16 @@ public class Deck {
 	 */
 	public Deck(String[] ranks, String[] suits, int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-	for(int i = 0; i < ranks.length; i++){
-		ElevensLab.Activity2StarterCode.Card card = new ElevensLab.Activity2StarterCode.Card(ranks[i], suits[i], values[i]);
-		cards(card,i);
+		cards = new ArrayList<Card>();
+		for (int j = 0; j < ranks.length; j++) {
+			for (String suitString : suits) {
+				cards.add(new Card(ranks[j], suitString, values[j]));
+			}
+		}
+		size = cards.size();
+		shuffle();
 	}
-	}
+
 
 
 	/**
@@ -48,7 +54,7 @@ public class Deck {
 	 */
 	public boolean isEmpty() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-
+		return size == 0;
 	}
 
 	/**
@@ -66,15 +72,22 @@ public class Deck {
 	 */
 	public void shuffle() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
-
+		for (int k = cards.size() - 1; k > 0; k--) {
+			int howMany = k + 1;
+			int start = 0;
+			int randPos = (int) (Math.random() * howMany) + start;
+			Card temp = cards.get(k);
+			cards.set(k, cards.get(randPos));
+			cards.set(randPos, temp);
+		}
+		size = cards.size();
 	}
-
 	/**
 	 * Deals a card from this deck.
 	 * @return the card just dealt, or null if all the cards have been
 	 *         previously dealt.
 	 */
-	public Card deal() {
+	public ElevensLab.Activity8StarterCode.Card deal() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 		return  deal();
 	}
