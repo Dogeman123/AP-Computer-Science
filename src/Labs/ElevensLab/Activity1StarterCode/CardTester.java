@@ -1,4 +1,4 @@
-package ElevensLab.Activity1StarterCode;
+package Labs.ElevensLab.Activity1StarterCode;
 
 /**
  * This is a class that tests the Card class.

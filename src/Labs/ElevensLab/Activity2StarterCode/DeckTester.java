@@ -1,4 +1,4 @@
-package ElevensLab.Activity2StarterCode;
+package Labs.ElevensLab.Activity2StarterCode;
 
 /**
  * This is a class that tests the Deck class.

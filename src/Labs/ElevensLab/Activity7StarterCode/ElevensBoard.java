@@ -1,4 +1,4 @@
-package ElevensLab.Activity7StarterCode;
+package Labs.ElevensLab.Activity7StarterCode;
 
 import java.util.List;
 import java.util.ArrayList;

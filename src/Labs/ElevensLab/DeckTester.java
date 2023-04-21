@@ -1,6 +1,6 @@
-package ElevensLab;
+package Labs.ElevensLab;
 
-import ElevensLab.Activity4StarterCode.Deck;
+import Labs.ElevensLab.Activity4StarterCode.Deck;
 
 /**
  * This is a class that tests the Deck class.

@@ -1,4 +1,4 @@
-package ElevensLab.Activity2StarterCode;
+package Labs.ElevensLab.Activity5StarterCode.Buggy1;
 
 /**
  * Card.java
