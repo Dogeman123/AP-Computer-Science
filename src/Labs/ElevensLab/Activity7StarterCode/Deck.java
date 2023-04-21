@@ -82,7 +82,7 @@ public class Deck {
 	 * @return the card just dealt, or null if all the cards have been
 	 *         previously dealt.
 	 */
-	public Labs.ElevensLab.Activity9StarterCode.Card deal() {
+	public Labs.ElevensLab.Activity7StarterCode.Card deal() {
 		if (isEmpty()) {
 			return null;
 		}

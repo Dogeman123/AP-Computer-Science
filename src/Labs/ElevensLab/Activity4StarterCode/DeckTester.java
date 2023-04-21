@@ -46,10 +46,10 @@ public class DeckTester {
 			+ ". It should be 2.";
 		assert !d.isEmpty() : "Initial deck is empty.";
 		boolean aceIsFirst, twoIsFirst;
-	Deck.Card c = d.deal();
+	Card c = d.deal();
 		assert c != null : "1st card dealt is null.";
-		aceIsFirst = c.matches(new Labs.ElevensLab.Activity5StarterCode.Buggy2.Card("ace", "hearts", 1));
-		twoIsFirst = c.matches(new Labs.ElevensLab.Activity5StarterCode.Buggy2.Card("2", "hearts", 2));
+		aceIsFirst = c.matches( new Card("ace", "hearts", 1));
+		twoIsFirst = c.matches(new Card("2", "hearts", 2));
 		assert (aceIsFirst || twoIsFirst) : "1st card dealt is " + c
 			+ ".  It is not the one of the two correct cards.";
 		assert d.size() == 1 : "Size after one deal is " + d.size()
@@ -58,10 +58,10 @@ public class DeckTester {
 		c = d.deal();
 		assert c != null : "2nd card dealt is null.";
 		if (aceIsFirst) {
-			assert c.matches(new Labs.ElevensLab.Activity5StarterCode.Buggy2.Card("2", "hearts", 2))	: "2nd card dealt is "
+			assert c.matches(new Card("2", "hearts", 2))	: "2nd card dealt is "
 				+ c + ". It is not one of the two correct cards.";
 		} else {
-			assert c.matches(new Labs.ElevensLab.Activity5StarterCode.Buggy2.Card("ace", "hearts", 1)) : "2nd card dealt is "
+			assert c.matches(new Card("ace", "hearts", 1)) : "2nd card dealt is "
 				+ c + ". It is not one of the two correct cards.";
 		}
 		testEmpty(d);
@@ -69,8 +69,8 @@ public class DeckTester {
 		d.shuffle();
 		c = d.deal();
 		assert c != null : "1st card dealt after shuffle is null.";
-		aceIsFirst = c.matches(new Labs.ElevensLab.Activity5StarterCode.Buggy2.Card("ace", "hearts", 1));
-		twoIsFirst = c.matches(new Labs.ElevensLab.Activity5StarterCode.Buggy2.Card("2", "hearts", 2));
+		aceIsFirst = c.matches(new Card("ace", "hearts", 1));
+		twoIsFirst = c.matches(new Card("2", "hearts", 2));
 		assert (aceIsFirst || twoIsFirst) : "1st card dealt after shuffle is "
 			+ c + ".  It is not the one of the two correct cards.";
 		assert d.size() == 1 : "Size is " + d.size()
@@ -79,11 +79,11 @@ public class DeckTester {
 		c = d.deal();
 		assert c != null : "2nd card dealt after shuffle is null.";
 		if (aceIsFirst) {
-			assert c.matches(new Labs.ElevensLab.Activity5StarterCode.Buggy2.Card("2", "hearts", 2))
+			assert c.matches(new Card ("2", "hearts", 2))
 				: "2nd card dealt after shuffle is " + c
 				+ ". It is not the one of the two correct cards.";
 		} else {
-			assert c.matches(new Labs.ElevensLab.Activity5StarterCode.Buggy2.Card("ace", "hearts", 1))
+			assert c.matches(new Card("ace", "hearts", 1))
 				: "2nd card dealt after shuffle is " + c
 				+ ". It is not the one of the two correct cards.";
 		}
@@ -98,7 +98,7 @@ public class DeckTester {
 		assert d.size() == 0 :  "Size for an empty deck is " + d.size()
 			+ ". It should be 0.";
 		assert d.isEmpty() : "isEmpty is false for an empty deck.";
-		Labs.ElevensLab.Activity5StarterCode.Buggy2.Card c = d.deal();
+		Card c = d.deal();
 		assert c == null : "Dealt card is " + c
 			+ ". It should be null for an empty deck.";
 	}
@@ -112,7 +112,7 @@ public class DeckTester {
 		assert d.size() == 1 : "Size is " + d.size()
 			+ ". It should be 1 for a 1-card deck.";
 		assert !d.isEmpty() : "isEmpty true for a 1-card deck.";
-		Labs.ElevensLab.Activity5StarterCode.Buggy2.Card c = d.deal();
+		Card c = d.deal();
 		assert c != null : "1st dealt card is null for a 1-card deck.";
 		assert c.matches(intended) : "1st card dealt for a 1-card deck is "
 			+ c + ". It should be " + intended + ".";
@@ -133,7 +133,7 @@ public class DeckTester {
 
 		boolean allMatch = true;
 		while (!d1.isEmpty()) {
-			Labs.ElevensLab.Activity5StarterCode.Buggy2.Card c1 = d1.deal();
+		Card c1 = d1.deal();
 			Card c2 = d2.deal();
 			if (!c1.matches(c2)) {
 				allMatch = false;

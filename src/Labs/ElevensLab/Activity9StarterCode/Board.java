@@ -44,6 +44,10 @@ public abstract class Board {
 		dealMyCards();
 	}
 
+	public Board() {
+
+	}
+
 	/**
 	 * Start a new game by shuffling the deck and
 	 * dealing some cards to this board.
