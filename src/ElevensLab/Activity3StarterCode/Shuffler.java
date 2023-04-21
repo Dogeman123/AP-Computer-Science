@@ -56,7 +56,7 @@ public class Shuffler {
 			int k = 0;
 			for (int j =0; j <= 25; j ++){
 
-				k += 2;
+				k   += 2;
 			}
 			k = 1;
 
