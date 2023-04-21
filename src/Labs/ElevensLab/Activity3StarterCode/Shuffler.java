@@ -1,4 +1,4 @@
-package ElevensLab.Activity3StarterCode;
+package Labs.ElevensLab.Activity3StarterCode;
 
 /**
  * This class provides a convenient way to test shuffling methods.
@@ -53,14 +53,11 @@ public class Shuffler {
 	 */
 	public static void perfectShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
-			int k = 0;
-			for (int j =0; j <= 25; j ++){
-
-				k += 2;
-			}
-			k = 1;
-
+		Card[] shuffled = new Card[52];
+		int k = 0;
 	}
+
+
 
 	/**
 	 * Apply an "efficient selection shuffle" to the argument.
@@ -75,6 +72,10 @@ public class Shuffler {
 	 */
 	public static void selectionShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
-
+		int[] shuffled = new int[52];
+		for(int k = shuffled.length-1; k > 0; k--){
+			int r =  (int)(Math.random() * (k-1)) + 1;
+			shuffled[r] = values[k];
+		}
 	}
 }

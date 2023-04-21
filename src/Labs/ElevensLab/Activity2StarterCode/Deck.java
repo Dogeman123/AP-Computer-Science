@@ -1,7 +1,4 @@
-package ElevensLab.Activity2StarterCode;
-
-import ElevensLab.Activity9StarterCode.Card;
-
+package Labs.ElevensLab.Activity2StarterCode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +12,7 @@ public class Deck {
 	/**
 	 * cards contains all the cards in the deck.
 	 */
-	private List<ElevensLab.Activity9StarterCode.Card> cards;
+	private List<Card> cards;
 
 	/**
 	 * size is the number of not-yet-dealt cards.
@@ -34,10 +31,10 @@ public class Deck {
 	 * @param values is an array containing all of the card point values.
 	 */
 	public Deck(String[] ranks, String[] suits, int[] values) {
-		cards = new ArrayList<ElevensLab.Activity9StarterCode.Card>();
+		cards = new ArrayList<Card>();
 		for (int j = 0; j < ranks.length; j++) {
 			for (String suitString : suits) {
-				cards.add(new ElevensLab.Activity9StarterCode.Card(ranks[j], suitString, values[j]));
+				cards.add(new Card(ranks[j], suitString, values[j]));
 			}
 		}
 		size = cards.size();
@@ -70,7 +67,7 @@ public class Deck {
 			int howMany = k + 1;
 			int start = 0;
 			int randPos = (int) (Math.random() * howMany) + start;
-			ElevensLab.Activity9StarterCode.Card temp = cards.get(k);
+			Card temp = cards.get(k);
 			cards.set(k, cards.get(randPos));
 			cards.set(randPos, temp);
 		}
@@ -82,7 +79,7 @@ public class Deck {
 	 * @return the card just dealt, or null if all the cards have been
 	 *         previously dealt.
 	 */
-	public ElevensLab.Activity9StarterCode.Card deal() {
+	public Card deal() {
 		if (isEmpty()) {
 			return null;
 		}
