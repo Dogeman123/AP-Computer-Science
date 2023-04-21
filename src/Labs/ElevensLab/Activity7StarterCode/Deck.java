@@ -79,8 +79,9 @@ public class Deck {
 
 	/**
 	 * Deals a card from this deck.
+	 *
 	 * @return the card just dealt, or null if all the cards have been
-	 *         previously dealt.
+	 * previously dealt.
 	 */
 	public Labs.ElevensLab.Activity7StarterCode.Card deal() {
 		if (isEmpty()) {

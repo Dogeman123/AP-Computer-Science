@@ -1,5 +1,6 @@
 package Labs.ElevensLab.Activity9StarterCode;
 
+
 import Labs.ElevensLab.Activity7StarterCode.Card;
 
 import java.util.ArrayList;
@@ -55,7 +56,7 @@ public class ElevensBoard {
 	 */
 	public ElevensBoard() {
 		cards = new Labs.ElevensLab.Activity7StarterCode.Card[BOARD_SIZE];
-		deck = new Deck(RANKS, SUITS, POINT_VALUES);
+		deck = new Labs.ElevensLab.Activity7StarterCode.Deck(RANKS, SUITS, POINT_VALUES);
 		if (I_AM_DEBUGGING) {
 			System.out.println(deck);
 			System.out.println("----------");
@@ -114,8 +115,9 @@ public class ElevensBoard {
 
 	/**
 	 * Accesses a card on the board.
-	 * @return the card at position k on the board.
+	 *
 	 * @param k is the board position of the card to return.
+	 * @return the card at position k on the board.
 	 */
 	public Labs.ElevensLab.Activity7StarterCode.Card cardAt(int k) {
 		return cards[k];
@@ -260,7 +262,7 @@ public class ElevensBoard {
 		boolean foundQueen = false;
 		boolean foundKing = false;
 		for (Integer kObj : selectedCards) {
-			int k = kObj.intValue();
+			int k = kObj;
 			if (cardAt(k).rank().equals("jack")) {
 				foundJack = true;
 			} else if (cardAt(k).rank().equals("queen")) {
