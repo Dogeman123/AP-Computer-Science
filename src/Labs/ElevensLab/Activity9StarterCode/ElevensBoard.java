@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * The ElevensBoard class represents the board in a game of Elevens.
  */
-public class ElevensBoard {
+public class ElevensBoard extends Board{
 
 	/**
 	 * The size (number of cards) on the board.
@@ -120,7 +120,7 @@ public class ElevensBoard {
 	 * @param k is the board position of the card to return.
 	 * @return the card at position k on the board.
 	 */
-	public Labs.ElevensLab.Activity7StarterCode.Card cardAt(int k) {
+	public Card cardAt(int k) {
 		return cards[k];
 	}
 
@@ -211,11 +211,11 @@ public class ElevensBoard {
 	 */
 	public boolean anotherPlayIsPossible() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
-		if (anotherPlayIsPossible()){
+		if (anotherPlayIsPossible() ){
 			return true;
 
 		}
-		else return false;
+		return false;
 	}
 
 

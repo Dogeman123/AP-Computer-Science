@@ -1,10 +1,10 @@
-package Labs.ElevensLab.Activity9StarterCode;
+ package Labs.ElevensLab.Activity9StarterCode;
 
 
-import Labs.ElevensLab.Activity8StarterCode.Board;
-import Labs.ElevensLab.Activity8StarterCode.ElevensBoard;
+ import Labs.ElevensLab.Activity8StarterCode.Board;
+ import Labs.ElevensLab.Activity8StarterCode.ElevensBoard;
 
-import java.util.List;
+ import java.util.List;
 
 /**
  * This is a class that plays the GUI version of the Elevens game.

@@ -1,12 +1,14 @@
 package Labs.ElevensLab.Activity7StarterCode;
 
+import Labs.ElevensLab.Activity8StarterCode.Board;
+
 import java.util.List;
 import java.util.ArrayList;
 
 /**
  * The ElevensBoard class represents the board in a game of Elevens.
  */
-public class ElevensBoard {
+public class ElevensBoard extends Board {
 
 	/**
 	 * The size (number of cards) on the board.
@@ -112,8 +114,9 @@ public class ElevensBoard {
 
 	/**
 	 * Accesses a card on the board.
-	 * @return the card at position k on the board.
+	 *
 	 * @param k is the board position of the card to return.
+	 * @return the card at position k on the board.
 	 */
 	public Card cardAt(int k) {
 		return cards[k];

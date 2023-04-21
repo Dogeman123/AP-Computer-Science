@@ -107,7 +107,7 @@ public abstract class Board {
 	 * @param k is the board position of the card to return.
 	 * @return the card at position k on the board.
 	 */
-	public Card cardAt(int k) {
+	public Labs.ElevensLab.Activity7StarterCode.Card cardAt(int k) {
 		return cards[k];
 	}
 
