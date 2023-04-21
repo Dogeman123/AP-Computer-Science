@@ -1,5 +1,9 @@
 package Labs.ElevensLab.Activity9StarterCode;
 
+
+import Labs.ElevensLab.Activity8StarterCode.Board;
+import Labs.ElevensLab.Activity8StarterCode.ElevensBoard;
+
 import java.util.List;
 
 /**

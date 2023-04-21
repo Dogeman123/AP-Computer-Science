@@ -126,7 +126,7 @@ public class ElevensBoard {
 	 */
 	public void replaceSelectedCards(List<Integer> selectedCards) {
 		for (Integer k : selectedCards) {
-			deal(k.intValue());
+			deal(k);
 		}
 	}
 

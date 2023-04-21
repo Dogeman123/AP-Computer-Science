@@ -2,6 +2,7 @@ package Labs.ElevensLab.Activity9StarterCode;
 
 
 import Labs.ElevensLab.Activity7StarterCode.Card;
+import Labs.ElevensLab.Activity7StarterCode.Deck;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,8 +56,8 @@ public class ElevensBoard {
 	 * Creates a new <code>ElevensBoard</code> instance.
 	 */
 	public ElevensBoard() {
-		cards = new Labs.ElevensLab.Activity7StarterCode.Card[BOARD_SIZE];
-		deck = new Labs.ElevensLab.Activity7StarterCode.Deck(RANKS, SUITS, POINT_VALUES);
+		cards = new Card[BOARD_SIZE];
+		deck = new Deck(RANKS, SUITS, POINT_VALUES);
 		if (I_AM_DEBUGGING) {
 			System.out.println(deck);
 			System.out.println("----------");
@@ -191,7 +192,6 @@ public class ElevensBoard {
 	 */
 	public boolean isLegal(List<Integer> selectedCards) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
-
 		if (selectedCards.size() == 2) {
 			return containsPairSum11(selectedCards);
 		} else if (selectedCards.size() == 3) {
@@ -211,8 +211,11 @@ public class ElevensBoard {
 	 */
 	public boolean anotherPlayIsPossible() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
-		List<Integer> cIndexes = cardIndexes();
-		return containsPairSum11(cIndexes) || containsJQK(cIndexes);
+		if (anotherPlayIsPossible()){
+			return true;
+
+		}
+		else return false;
 	}
 
 
@@ -258,19 +261,19 @@ public class ElevensBoard {
 	private boolean containsJQK(List<Integer> selectedCards) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
 
-		boolean foundJack = false;
-		boolean foundQueen = false;
-		boolean foundKing = false;
-		for (Integer kObj : selectedCards) {
-			int k = kObj;
+		boolean Jack = false;
+		boolean Queen = false;
+		boolean King = false;
+		for (Integer cd : selectedCards) {
+			int k = cd;
 			if (cardAt(k).rank().equals("jack")) {
-				foundJack = true;
+				Jack = true;
 			} else if (cardAt(k).rank().equals("queen")) {
-				foundQueen = true;
+				Queen = true;
 			} else if (cardAt(k).rank().equals("king")) {
-				foundKing = true;
+				King = true;
 			}
 		}
-		return foundJack && foundQueen && foundKing;
+		return Jack && Queen && King;
 	}
 }
