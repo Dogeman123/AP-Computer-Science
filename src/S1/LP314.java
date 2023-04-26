@@ -10,19 +10,19 @@ public class LP314 {
         System.out.print("Enter Awbrey Ny votes: ");
         int Avotes = input.nextInt();
 
-        System.out.print("Enter M's Ny votes: ");
+        System.out.print("Enter Q3.M's Ny votes: ");
         int Mvotes = input.nextInt();
 
         System.out.print("Enter A's Nj votes: ");
         int Avotes2 = input.nextInt();
 
-        System.out.print("Enter M's Nj votes: ");
+        System.out.print("Enter Q3.M's Nj votes: ");
         int Mvotes2 = input.nextInt();
 
         System.out.print("Enter A's C votes: ");
         int Avotes3 = input.nextInt();
 
-        System.out.print("Enter M's C votes: ");
+        System.out.print("Enter Q3.M's C votes: ");
         int Mvotes3 = input.nextInt();
 
         ClP314 wow = new ClP314(Avotes, Mvotes, Avotes2, Mvotes2, Avotes3, Mvotes3);
