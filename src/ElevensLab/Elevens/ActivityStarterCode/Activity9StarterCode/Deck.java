@@ -33,6 +33,7 @@ public class Deck {
 	 */
 	public Deck(String[] ranks, String[] suits, int[] values) {
 		cards = new ArrayList<Card>();
+
 		for (int j = 0; j < ranks.length; j++) {
 			for (String suitString : suits) {
 				cards.add(new Card(ranks[j], suitString, values[j]));
@@ -65,9 +66,9 @@ public class Deck {
 	 */
 	public void shuffle() {
 		for (int k = cards.size() - 1; k > 0; k--) {
-			int howMany = k + 1;
+			int cnt = k + 1;
 			int start = 0;
-			int randPos = (int) (Math.random() * howMany) + start;
+			int randPos = (int) (Math.random() * cnt) + start;
 			Card temp = cards.get(k);
 			cards.set(k, cards.get(randPos));
 			cards.set(randPos, temp);

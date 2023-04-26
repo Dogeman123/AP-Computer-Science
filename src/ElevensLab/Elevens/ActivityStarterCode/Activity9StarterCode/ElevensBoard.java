@@ -58,9 +58,13 @@ public class ElevensBoard extends Board {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
 		if (selectedCards.size() == 2) {
 			return containsPairSum11(selectedCards);
-		} else if (selectedCards.size() == 3) {
+		}
+
+		else if (selectedCards.size() == 3) {
 			return containsJQK(selectedCards);
-		} else {
+		}
+
+		else {
 			return false;
 		}
 	}
@@ -91,9 +95,11 @@ public class ElevensBoard extends Board {
 	private boolean containsPairSum11(List<Integer> selectedCards) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
 		for (int sk1 = 0; sk1 < selectedCards.size(); sk1++) {
-			int k1 = selectedCards.get(sk1).intValue();
+			int k1 = selectedCards.get(sk1);
+
 			for (int sk2 = sk1 + 1; sk2 < selectedCards.size(); sk2++) {
-				int k2 = selectedCards.get(sk2).intValue();
+				int k2 = selectedCards.get(sk2);
+
 				if (cardAt(k1).pointValue() + cardAt(k2).pointValue() == 11) {
 					return true;
 				}
@@ -115,13 +121,18 @@ public class ElevensBoard extends Board {
 		boolean foundJack = false;
 		boolean foundQueen = false;
 		boolean foundKing = false;
-		for (Integer kObj : selectedCards) {
-			int k = kObj.intValue();
+		for (Integer Cardd : selectedCards) {
+			int k = Cardd;
+
 			if (cardAt(k).rank().equals("jack")) {
 				foundJack = true;
-			} else if (cardAt(k).rank().equals("queen")) {
+			}
+
+			else if (cardAt(k).rank().equals("queen")) {
 				foundQueen = true;
-			} else if (cardAt(k).rank().equals("king")) {
+			}
+
+			else if (cardAt(k).rank().equals("king")) {
 				foundKing = true;
 			}
 		}
