@@ -5,6 +5,7 @@ package ElevensLab.Elevens.ActivityStarterCode.Activity1StarterCode;
  */
 public class CardTester {
 
+
 	/**
 	 * The main method in this class checks the Card operations for consistency.
 	 *	@param args is not used.
