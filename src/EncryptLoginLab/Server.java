@@ -1,4 +1,4 @@
-/*
+package EncryptLoginLab;/*
 	Program:	Log in server
 				This program implements the authentication server 
 				Protocol message format: "[Type of Message];[data];[data]"
@@ -12,12 +12,10 @@ import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
-import java.util.ArrayList;
 
 public class Server {
     public static void main(String[] args) throws Exception{
@@ -26,7 +24,7 @@ public class Server {
         ServerSocket welcomeSocket = new ServerSocket(PORT);
         System.out.println("Now listening at " + welcomeSocket.getLocalSocketAddress());
 
-        while(true){//Server runs an infinite loop to provide service at any time
+        while(true){//EncryptLOginLab.Server runs an infinite loop to provide service at any time
 	        //setup communication with client
 	        Socket connectionSocket = welcomeSocket.accept(); //session socket
 	        System.out.println("Connected to " + connectionSocket.getInetAddress());
@@ -77,7 +75,7 @@ public class Server {
 
         try{
             //read the file searching for username/password combo
-            File myFile = new File("usernamepassword.txt");
+            File myFile = new File("EncryptLoginLab/usernamepassword.txt");
             Scanner myScanner = new Scanner(myFile);
             while(myScanner.hasNextLine()){
                 String line = myScanner.nextLine();
