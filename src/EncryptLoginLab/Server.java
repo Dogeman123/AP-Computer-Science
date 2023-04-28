@@ -75,7 +75,7 @@ public class Server {
 
         try{
             //read the file searching for username/password combo
-            File myFile = new File("EncryptLoginLab/usernamepassword.txt");
+            File myFile = new File("usernamepassword.txt");
             Scanner myScanner = new Scanner(myFile);
             while(myScanner.hasNextLine()){
                 String line = myScanner.nextLine();

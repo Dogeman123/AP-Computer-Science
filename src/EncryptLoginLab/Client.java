@@ -51,7 +51,9 @@ public class Client {
 
         //Handle response from server
         String loginResponse = inFromServer.readLine();
+
         /**TODO: Decrypt the message *********/
+
         System.out.println("Response: " + loginResponse);
         String[] parsedLoginResponse = loginResponse.split(";");
 
