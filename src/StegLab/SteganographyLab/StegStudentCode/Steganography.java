@@ -6,7 +6,7 @@ public class Steganography extends Picture {
 
 
 public static void clearLow(Pixel p){
-   
+
 }
 
 
