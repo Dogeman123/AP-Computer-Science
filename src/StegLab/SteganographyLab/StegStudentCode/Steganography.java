@@ -10,9 +10,6 @@ public static void clearLow(Pixel p){
 }
 
 
-
-
-
     public static void main(String[] args) {
         Picture beach = new Picture("beach.jpg");
         beach.explore();
