@@ -20,9 +20,4 @@ public static void clearLow(Pixel p){
     public static Picture testClearLOw(Picture p) {
 return p ;
     }
-
-
-
-
-
 }
