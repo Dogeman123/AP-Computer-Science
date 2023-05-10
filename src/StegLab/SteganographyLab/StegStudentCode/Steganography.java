@@ -6,18 +6,20 @@ public class Steganography extends Picture {
 
 
 public static void clearLow(Pixel p){
-
+    int g = p.getGreen();
+    int r = p.getRed();
+    int b = p.getBlue();
 }
 
 
     public static void main(String[] args) {
         Picture beach = new Picture("beach.jpg");
         beach.explore();
-        Picture copy = testClearLOw(beach);
+        Picture copy = testClearLow(beach);
         copy.explore();
     }
 
-    public static Picture testClearLOw(Picture p) {
-return p ;
+    public static Picture testClearLow(Picture p) {
+  return p;
     }
 }
