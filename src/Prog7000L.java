@@ -4,6 +4,7 @@ public class Prog7000L {
         private double theta0; // y-Intercept
         private double theta1; // Slope
         private double alpha; // Learning rate
+        private double tolerance;
         private double[] objective;
 
         public LinearRegression(double thetaOne, double thetaZero,
