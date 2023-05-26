@@ -86,6 +86,6 @@ public class MultiLayerPerceptron {
             System.out.printf("Epoch %d:\tLoss: %.6f\t\tAccuracy: %.6f\n",
                     (epoch+1), loss, accuracy(X_train, y_train));
         }
-    }
 
+    }
 }
