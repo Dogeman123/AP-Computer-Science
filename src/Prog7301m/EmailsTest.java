@@ -38,13 +38,14 @@ public class EmailsTest {
             }
 
             // Test data
-            input = new Scanner(new File("data/prog7301m_test.csv"));
+           input = new Scanner(new File("emails.csv"));
             var Xte = new ArrayList<Double[]>();
             var yte = new ArrayList<Double[]>();
+            String[] Labels = {"Emails"};
             input.nextLine();
             while (input.hasNextLine()) {
                 String[] line = input.nextLine().split(",");
-                Double[] row = new Double[line.length-1];  // Images are 28x28, so 784 pixels
+                Double[] row = new Double[line.length-2500];  // Images are 28x28, so 784 pixels
                 Double[] label_onehot = new Double[10];  // 10 possible digits [0-9]
                 int label = Integer.parseInt(line[0]);
                 for (int i = 0; i < label_onehot.length; i++)
