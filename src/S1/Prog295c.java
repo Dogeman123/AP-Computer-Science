@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+
+//prog295c
+//MV
 public class Prog295c {
 
     public static void main(String[] args) throws FileNotFoundException {
@@ -56,5 +59,9 @@ public class Prog295c {
         String dept = line.substring(line.length()-1);
 
         System.out.printf(ssn, clas, type, dept);
+
+
+
+
     }
 }
